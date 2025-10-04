@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form - Gradient</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #d66dd4, #f23a8e);
+      min-height: 100vh;
+    }
+
+    .login-container {
+      width: 350px;
+      background: white;
+      margin: 100px auto;
+      padding: 30px 25px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .form-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .toggle-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .toggle-buttons12 {
+      background: linear-gradient(to left, #d66dd4, #f23a8e);
+      color: white;
+      border: none;
+      padding: 8px 30px;
+      margin: 0 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .toggle-buttons1 {
+      color: black;
+      border: none;
+      padding: 8px 30px;
+      margin: 0 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      background: none;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-container a.forgot {
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      text-decoration: none;
+      color: #e441a5;
+      margin-top: 5px;
+    }
+
+    .login-container button.login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #e441a5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+   
+    .signup-link-inside {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .signup-link-inside a {
+      color: #e441a5;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="form-title">Login Form</div>
+
+    <div class="toggle-buttons">
+      <button class="toggle-buttons12">Login</button>
+      <button class="toggle-buttons1">Signup</button>
+    </div>
+
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Password">
+    <a href="#" class="forgot">Forgot password?</a>
+
+    <button class="login-btn">Login</button>
+
+   
+    <div class="signup-link-inside">
+      Not a member? <a href="#">Signup now</a>
+    </div>
+  </div>
+
+</body>
+</html>

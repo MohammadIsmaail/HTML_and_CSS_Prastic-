@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: url("img/task2-bg.jpg");
+            background-size: cover;
+        }
+        .main{
+            height: 900px;
+            width: 1400px;
+            margin: 0px auto;
+            background: white;
+        }
+        .up{
+            height: 30px;
+            width: 1400px;
+            padding: 0px 100px;
+            background: navy;
+        }
+        .up1{
+            height: 30px;
+            width: 600px;
+            float: left;
+            font-size: 18px;
+            line-height: 30px;
+            color: white;
+        }
+        .up2{
+            height: 30px;
+            width: 600px;
+            float: left;
+            font-size: 18px;
+            color: white;
+            text-align: right;
+        }
+        .up1 i{
+            color: yellow;
+            font-size: 20px;
+        }
+        .up2 button{
+            height: 30px;
+            width: 120px;
+            background: yellow;
+            color: black;
+            font-size: 18px;
+        }
+        nav{
+            height: 40px;
+            width: 1400px;
+            padding: 0px 100px;
+        }
+        .logo{
+            height: 40px;
+            width: 300px;
+            line-height: 40px;
+            float: left;
+            font-weight: bold;
+        }
+        .logo img{
+            height: 40px;width: 40px;
+            float: left;
+        }
+
+        .logo h1{
+            font-size: 30px;
+            float: left;
+            margin-left: 10px;
+        }
+        .links{
+            height: 40px;
+            width: 500px;
+            float: left;
+        }
+        .links ul{
+            height: 40px;
+            width: 500px;
+            list-style: none;
+        }
+        .links ul li{
+            height: 40px;
+            width: 125px;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+        }
+        .links ul li a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, .7);
+            font-weight: bold;
+        }
+        .links ul li a i{
+            font-size: 18px;
+        }
+        .search{
+            height: 40px;
+            width: 400px;
+            padding: 0px 50px;
+            float: left;
+        }
+        .s-box{
+            height: 40px;
+            width: 300px;
+            border: 2px solid rgba(0, 0, 0, .3);
+            border-radius: 5px;
+        }
+        .s{
+            height: 40px;
+            width: 230px;
+            float: left;
+            padding: 5px;
+        }
+        .s input{
+            height: 30px;
+            width: 270px;
+            border: none;
+            padding-left: 10px;
+        }
+        .s input:focus{
+            outline: none;
+            border: none;
+        }
+        .s input::placeholder{
+            color: black;
+        }
+        .i{
+            height: 30px;
+            width:30px;
+            font-size: 20px;
+            color: black;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            margin-left: 30px;
+        }
+        .hero{
+            height: 500px;
+            width: 1400px;
+            background: url("download4.webp");
+            background-size: cover;
+        }
+        .a{
+            height: 500px;
+            width: 100px;
+            float: left;
+            padding: 200px 0px;
+        }
+        .arr{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            color: white;
+            background: grey;
+            text-align: center;
+            line-height: 50px;
+        }
+        .a i{
+            font-size: 30px;
+        }
+        .content{
+            height: 500px;
+            width: 1200px;
+            float: left;
+            padding: 150px 200px;
+            text-align: center;
+        }
+        .content h2{
+            color: white;
+            font-size: 40px;
+        }
+        .content button{
+            height: 50px;
+            width: 150px;
+            background: yellow;
+            color: black;
+            border-radius: 5px;
+            border: none;
+            margin-top: 50px;
+            font-weight:bold;
+            font-size: 16px;
+        }
+        .row{
+            height: 300px;
+            width: 1400px;
+            padding: 0px 100px;
+        }
+        .box{
+            height: 300px;
+            width: 370px;
+            float: left;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+            margin-right: 30px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transform: translateY(-100px);
+            background: white;
+        }
+        .box i{
+            font-size: 45px;
+            margin: 30px 0px;
+            color: yellow;
+        }
+        .box h3{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .box p{
+            color: grey;
+        }
+        .box button{
+            height: 50px;
+            width: 150px;
+            background: yellow;
+            color: black;
+            border-radius: 5px;
+            border: none;
+            margin-top: 20px;
+            font-weight:bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="up">
+            <div class="up1"><i class="ri-phone-fill"></i> +142 5897555 <i class="ri-mail-line" style="margin-left: 40px;"></i>info@example.com</div>
+            <div class="up2"><button>Apply Now</button></div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="download2.webp" alt="not found">
+                <h1>Mastery</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pages <i class="ri-arrow-down-s-fill"></i></a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="s-box">
+                    <div class="s"><input type="text" placeholder="Search here..."></div>
+                    <div class="i"><i class="ri-search-line"></i></div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="a"><div class="arr"><i class="ri-arrow-left-s-line"></i></div></div>
+            <div class="content">
+                <h2>Better Education For A <br>Better World</h2>
+                <button>Read More</button>
+            </div>
+            <div class="a"><div class="arr"><i class="ri-arrow-right-s-line"></i></div></div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <i class="ri-computer-line"></i> <br><br>
+                <h3>Learn Courses Online</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam, repellendus asperiores hic corporis vel fugiat labore cumque rerum quidem.</p>
+                <button>Read More</button>
+            </div>
+            <div class="box">
+                <i class="ri-team-fill"></i> <br><br>
+                <h3>HIghly Qualified Teachers</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam, repellendus asperiores hic corporis vel fugiat labore cumque rerum quidem.</p>
+                <button>Read More</button>
+            </div>
+            <div class="box">
+                <i class="ri-book-2-fill"></i><br><br>
+                <h3>Book Library & Stores</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam, repellendus asperiores hic corporis vel fugiat labore cumque rerum quidem.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

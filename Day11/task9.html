@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education Appointment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-box {
+      max-width: 500px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-box h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      border: none;
+      border-bottom: 2px solid gray;
+    }
+
+    .checkbox-group {
+      margin-bottom: 15px;
+    }
+
+    .button {
+      background-color: #0033cc;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .button:hover {
+      background-color: #0022aa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <h2>Education Appointment Form</h2>
+  <form>
+    <div class="input-group">
+      
+      <input type="text" placeholder="Title" required />
+    </div>
+    <div class="input-group">
+     
+      <input type="text" placeholder="Your Name" required />
+    </div>
+    <div class="input-group">
+      
+      <input type="email" id="email" name="email" placeholder="Email" required />
+    </div>
+    <div class="input-group">
+      
+      <input type="tel" placeholder="Phone Number" required />
+    </div>
+    <div class="input-group">
+      <input type="text" placeholder="Course Type" required list="course"/>
+      <datalist id="course" name="course" required>
+        <option value="" disabled selected>Course Type</option>
+        <option value="web">Web Development</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+      </datalist>
+    </div>
+    <div class="input-group">
+      <label for="location" style="font-weight: bold; font-size: 17px;">How would you like to be located?</label>
+      
+      <div class="input-group">
+      <input type="text" placeholder="Course Type" required list="course"/>
+      <datalist id="course" name="course" required>
+        <option value="" disabled selected>Course Type</option>
+        <option value="web">Web Development</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+      </datalist>
+    </div>
+    <div class="input-group">
+      <input type="text" placeholder="Course Type" required list="course"/>
+      <datalist id="course" name="course" required>
+        <option value="" disabled selected>Course Type</option>
+        <option value="web">Web Development</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+      </datalist>
+    </div>
+    </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms">I agree to the Terms and Conditions</label>
+    </div>
+    <button type="submit" class="button">Request an appointment</button>
+  </form>
+</div>
+
+</body>
+</html>

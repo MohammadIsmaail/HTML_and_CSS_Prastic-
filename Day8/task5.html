@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exact Layout</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr 4fr 2fr; /* column widths */
+    grid-template-rows: 2fr 1fr 1fr 2fr;         /* row heights */
+    width: 900px;
+    height: 500px;
+    border: 2px solid blue;
+  }
+  .cell {
+    border: 2px solid blue;
+    box-sizing: border-box;
+  }
+  .blue {
+    background-color: #dfe2ff; /* light blue */
+  }
+  .green {
+    background-color: #dfffe0; /* light green */
+  }
+  .white {
+    background-color: white;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Row 1 -->
+  <div class="cell blue"></div>
+  <div class="cell green"></div>
+  <div class="cell blue"></div>
+  <div class="cell green"></div>
+  <div class="cell white"></div>
+
+  <!-- Row 2 -->
+  <div class="cell green"></div>
+  <div class="cell blue"></div>
+  <div class="cell white"></div>
+  <div class="cell white"></div>
+  <div class="cell green"></div>
+
+  <!-- Row 3 -->
+  <div class="cell white"></div>
+  <div class="cell green"></div>
+  <div class="cell blue"></div>
+  <div class="cell green"></div>
+  <div class="cell blue"></div>
+
+  <!-- Row 4 -->
+  <div class="cell green"></div>
+  <div class="cell blue"></div>
+  <div class="cell white"></div>
+  <div class="cell blue"></div>
+  <div class="cell green"></div>
+</div>
+
+</body>
+</html>

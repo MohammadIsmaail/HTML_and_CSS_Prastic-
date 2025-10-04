@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Pearson Charity: Donation Form</title>
+</head>
+<body>
+<fieldset>
+    <h2>Pearson Charity: Donation Form</h2>
+    <p>Please complete the form. Mandatory fields are marked with a <span style="color:red">*</span></p>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information Details</legend>
+
+            <label for="name">Name<span style="color:red">*</span></label>
+            <input type="text" id="name" placeholder="For example: John Doe"><br><br>
+
+            <label for="phone">Phone<span style="color:red">*</span></label>
+            <input type="tel" id="phone" placeholder="For example: 012-345-6789"><br><br>
+
+            <label for="email">Email<span style="color:red">*</span></label>
+            <input type="email" id="email" placeholder="For example: user@domain.com"><br><br>
+
+            <label for="gender">Gender<span style="color:red">*</span></label>
+            <select id="gender">
+                <option>Select an option</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Donation Details</legend>
+
+            <label for="amount">Amount<span style="color:red">*</span></label>
+            <input type="number" id="amount" placeholder="Any amount between R1 - R1000"><br><br>
+
+            <label for="fund">Fund<span style="color:red">*</span></label>
+            <select id="fund">
+                <option>Select an option</option>
+                <option>Education</option>
+                <option>Health</option>
+                <option>Food</option>
+            </select><br><br>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Donate</button>
+    </form>
+</fieldset>
+</body>
+</html>

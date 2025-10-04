@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 40px;
+  }
+  .contact-form {
+    max-width: 400px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+  .contact-form h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .form-row > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #999;
+    text-transform: uppercase;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    outline: none;
+    resize: none;
+  }
+  textarea {
+    height: 80px;
+  }
+  select {
+    cursor: pointer;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .submit-btn {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #222;
+    border: none;
+    padding: 12px 0;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .submit-btn:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+  <form class="contact-form">
+    <h2>Contact Us</h2>
+
+    <div class="form-row">
+      <div>
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Number Phone" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="full-width">
+        <label for="services">Needed Services *</label>
+        <select id="services" name="services" required>
+          <option value="" disabled selected>Please choose</option>
+          <option value="service1">Service 1</option>
+          <option value="service2">Service 2</option>
+          <option value="service3">Service 3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="full-width">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit →</button>
+  </form>
+</body>
+</html>

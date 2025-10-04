@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perfect Ludo Board</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #eee;
+        }
+
+        /* Board is 15x15 grid */
+        .board {
+            width: 600px;
+            height: 600px;
+            border: 5px solid #000;
+            font-size: 0;
+        }
+
+        .cell {
+            float: left;
+            width: calc(100% / 15);
+            height: calc(100% / 15);
+            border: 1px solid #999;
+        }
+
+        /* Home Colors */
+        .blue {
+            background: #0066cc;
+        }
+
+        .red {
+            background: #cc0000;
+        }
+
+        .green {
+            background: #009933;
+        }
+
+        .yellow {
+            background: #ffcc00;
+        }
+
+        /* White home squares */
+        .home-box {
+            background: #fff;
+        }
+
+        /* Center triangles (approximation using 4 squares) */
+        .center-blue {
+            background: #0066cc;
+        }
+
+        .center-red {
+            background: #cc0000;
+        }
+
+        .center-green {
+            background: #009933;
+        }
+
+        .center-yellow {
+            background: #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="board">
+        <!-- 15 x 15 = 225 cells -->
+        <!-- We'll generate manually: top-left 5x5 = blue home with 2x2 white center -->
+        <!-- Row 0 -->
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+
+        <!-- Row 1 -->
+        <div class="cell blue"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell red"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell red"></div>
+
+        <!-- Row 2 -->
+        <div class="cell blue"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell red"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell red"></div>
+
+        <!-- Row 3 -->
+        <div class="cell blue"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell red"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell red"></div>
+
+        <!-- Row 4 -->
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+
+        <!-- Row 5 to 9 will make horizontal + vertical paths + center -->
+        <!-- Row 5 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <!-- Row 6 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell red"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <!-- Row 7 (middle row with center) -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell blue"></div>
+        <div class="cell blue"></div>
+        <div class="cell center-yellow"></div>
+        <div class="cell red"></div>
+        <div class="cell red"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <!-- Row 8 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell red"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <!-- Row 9 -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <!-- Bottom 5x5 (green/yellow homes) -->
+        <!-- Row 10 -->
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+
+        <!-- Row 11 -->
+        <div class="cell yellow"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell yellow"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell green"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell green"></div>
+
+        <!-- Row 12 -->
+        <div class="cell yellow"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell yellow"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell green"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell green"></div>
+
+        <!-- Row 13 -->
+        <div class="cell yellow"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell yellow"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell green"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell home-box"></div>
+        <div class="cell green"></div>
+
+        <!-- Row 14 -->
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell yellow"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+        <div class="cell green"></div>
+
+    </div>
+
+</body>
+
+</html>

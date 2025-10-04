@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .outer{
+       min-height: 1500px;
+       width: 100%;
+       background-color: yellowgreen;
+    }
+    .nav{
+      height: 55px;
+      width: 100%;
+      border-radius: 5px;
+      background-color:#131921;
+    }
+    .logo{
+      height: 50px;
+      width: 150px;
+      font-size: 25px;
+      color: white;
+      line-height: 50px;
+      margin-left: 30px;
+      float: left;
+      background-image: url("amazon.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .searchbar{
+      height: 50px;
+      width: 650px;
+      float: left;    
+      transform: translateY(2px);  
+    }
+  
+    .inp{
+      height: 20px;
+      width: 17px;
+      background-color: transparent;
+      border: none;
+    }
+    ::placeholder{
+      font-size: 16px;
+    }
+    .cart{
+      height: 50px;
+      width: 85px;
+      float: left;
+     
+
+    }
+    .pic{
+      height: 30px;
+      width: 37px;
+      background-image: url("download4.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateX(10px) translateY(15px);
+    }
+    .inp1{
+      height: 30px;
+      width: 37px;
+      background-color:rgba(211, 211, 211 ,.1);
+      border: none;
+      outline: none;
+       transform: translateX(47px) translateY(-15px);
+       margin-left: 3px;
+    }
+    ::placeholder{
+      font-size: 16px;
+      margin-left: 2px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .sig{
+      height: 50px;
+      width: 400px;
+      float: left;
+     
+
+    }
+    .inp122{
+      height: 20px;
+      width: 17px;
+      background-color:rgba(211, 211, 211 ,.1);
+      border: none;
+      outline: none;
+       transform: translateX(-0px) translateY(-1px);
+    }
+    .nav2{
+      height: 40px;
+      width: 100%;
+      background-color:#232f3e;
+
+    }
+    .slid{
+      height: 550px;
+      width: 100%;
+      background-image: url("download3.webp");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+   .slidbox{
+    height: 70px;
+    width: 600px;
+    font-size: 30px;
+    transform: translateX(150px) translateY(75px);
+   }
+   .line
+   {
+    width: 90%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin: 0px auto;
+    background-color: #f5f6f6;
+    transform: translateY(-300px);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .start{
+    height: 370px;
+    width: 100%;
+    transform: translateY(-270px);
+   }
+   .get{
+    height: 370px;
+    width: 350px;
+    background-color: white;
+    float: left;
+    margin-left: 120px;
+   }
+   .get1{
+    height: 370px;
+    width: 350px;
+    background-color: white;
+    float: left;
+    margin-left: 30px;
+   }
+   .letter1{
+    height: 40px;
+    width: 100%;
+
+   }
+   .clothes1{
+    height: 145px;
+    width: 100%;
+
+   }
+    .clothes2{
+    height: 145px;
+    width: 100%;
+
+   }
+   .letter11{
+    height: 40px;
+    width: 100%;
+
+   }
+   .divimg1{
+    height: 135px;
+    width: 45%;
+
+    float: left;
+    margin-left: 14px;
+    background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+   .divimg2{
+    height: 135px;
+    width: 45%;
+
+    margin-left: 8px;
+    float: left;
+     background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+      .divimg11{
+    height: 135px;
+    width: 45%;
+
+    float: left;
+    margin-left: 14px;
+     background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+   .divimg22{
+    height: 135px;
+    width: 45%;
+
+    margin-left: 8px;
+    float: left;
+     background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+
+   .get2{
+    height: 370px;
+    width: 350px;
+    float: left;
+    background-color: white;
+    margin-left: 30px;
+   }
+    .letter111{
+    height: 40px;
+    width: 100%;
+
+   }
+   .clothes111{
+    height: 145px;
+    width: 100%;
+
+   }
+    .clothes222{
+    height: 145px;
+    width: 100%;
+
+   }
+   .letter111{
+    height: 40px;
+    width: 100%;
+
+   }
+   .divimg111{
+    height: 135px;
+    width: 45%;
+
+    float: left;
+    margin-left: 14px;
+    background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+   .divimg222{
+    height: 135px;
+    width: 45%;
+
+    margin-left: 8px;
+    float: left;
+     background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+      .divimg111{
+    height: 135px;
+    width: 45%;
+
+    float: left;
+    margin-left: 14px;
+     background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+   .divimg222{
+    height: 135px;
+    width: 45%;
+
+    margin-left: 8px;
+    float: left;
+     background-image: url("man2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+   }
+
+   .imgst{
+    height: 250px;
+    width: 300px;
+    background-image: url("download4.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 20px;
+
+   }
+
+.get11{
+    height: 370px;
+    width: 350px;
+    background-color: white;
+    float: left;
+    margin-left: 120px;
+   }
+     .get22{
+    height: 370px;
+    width: 350px;
+    background-color: white;
+    float: left;
+    margin-left: 30px;
+   }
+    .get33{
+    height: 370px;
+    width: 350px;
+    float: left;
+    background-color: white;
+    margin-left: 30px;
+   }
+   
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="nav">
+      <div class="logo"></div>
+      <div class="searchbar">
+        <div class="mid1"
+         style="font-size: 17px; text-align: center; width:25% ;margin-top: 5px;float:left;
+         font-weight: bold; color: white;">
+          <span>Deliver to</span>
+    <p style="font-size: 17px; font-weight: bold;color: white; "><i class="ri-map-pin-line"></i> India</p></div>
+
+        <span style="text-align: center; font-size: 20px; line-height: 50px; width: 50px; background:#e6e6e6; padding: 7px 10px; border-radius: 5px 0px 0px 5px;
+        border-right:1px solid gray ; color: black" >All 
+        <input list="a11" type="text" class="inp"> 
+           <datalist id="a11">
+            <option>Men</option>
+            <option>Women</option>
+           </datalist>
+        </span>
+
+        
+                    <input type="text" placeholder="Search Amazon"
+                        style="padding: 11px 40px; border-radius: 0px 5px 5px 0px; width: 400px;  border: none; outline: none; box-sizing: border-box; background:#ffffff;transform: translateY(-2.5px);"></div>
+  <i class="ri-search-line" style="position: absolute; right: 525px; top: 8px; background-color: #ffbf6a; height: 37px;line-height: 37px; width: 50px;border-radius: 0px 5px 5px 0px;  border: 0px 0px 5px 5px; text-align: center;"></i>
+
+      <div class="cart">
+        <div class="countrylogo">
+          <div class="pic"></div>
+
+        <input list="a12" type="text" class="inp1" style="color: white;"> 
+           <datalist id="a12">
+            <option >EN</option>
+            <option selected >IN</option>
+           </datalist>
+ 
+        </div>
+
+      </div>
+
+      <div class="sig">
+              <div class="mid1"
+         style="font-size: 17px; text-align: center; width:55% ;margin-top: 0px;float:left;
+          color: white; transform:  translateY(8px); margin-left: 0px;" >
+          <span>Hello, sign in</span>
+    <p style="font-size: 15px; color: white; font-weight: bold; ">Account & List
+
+
+<input list="a122" type="text" class="inp122"> 
+           <datalist id="a122">
+            <option>Login</option>
+            <option selected>Sigin</option>
+           </datalist>
+
+
+    </p></div>
+
+     <div class="mid1"
+         style="font-size: 17px; text-align: center; width:15% ;margin-top: 0px;float:left;
+          color: white; transform:  translateY(8px); margin-left: 0px;" >
+          <span>Return</span>
+    <p style="font-size: 15px; color: white; font-weight: bold; ">& Order</p></div>
+
+         <div
+                    style="background: rgba(211, 211, 211, .7); height: 35px; width: 0%;transform: translateY(3px); margin-left: 70px;border-radius: 3px; padding: 15px 0px;">
+                    <i class="ri-shopping-cart-line"
+                        style="color: white; font-size: 32px; text-align: center;margin-left: 70px;position: absolute; top: 5px;"></i>    
+                </div>
+
+
+      </div>
+    </div>
+
+  <section class="nav2" style="position: relative;">
+    
+<span style="color: white; font-size: 45px; margin-left: 30px;line-height: 0px;position: absolute; top: 23px;" >&#8801;</span>
+  
+    <span style="color: white; margin-left: 60px; font-weight: bold;line-height:45px;">All</span>
+  <span style=" color:white;margin-left: 40px;line-height: 40px;">Today</span>
+
+  </section>
+
+  <section class="slid" style="position: relative;">
+    <i class="ri-arrow-left-wide-line" style="font-size: 70px; position: absolute; top: 90px;left: 50px; "></i>
+   <div class="slidbox">
+    <h1>Kitchen essentials</h1>
+    <p>Under $50</p>
+   </div>
+  </section>
+
+  <div class="line"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, magnam quaerat. A sed nobis maiores tenetur dolor labore <a href="#" style="text-decoration: none;">Lorem ipsum dolor sit amet.</a></div>
+
+<!-- line 1 -->
+  <section class="start">
+   <div class="get">
+    <span style="margin-left: 20px; line-height: 40px; font-size: 18px; font-family: Arial, Helvetica, sans-serif;font-weight: bold;"> Get Your Game on </span>
+    <div class="imgst"></div>
+      <span style="margin-left: 20px; line-height: 90px; font-size: 18px; font-family: Arial, Helvetica, sans-serif; "> <a href="#" style="text-decoration: none;">
+        Shop Gaming
+      </a> </span>
+   </div>
+   <div class="get1">
+      <div class="letter1" style="line-height: 40px; font-size: 20px;margin-left: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> Shop Fashion for less </div>
+      <div class="clothes1">
+        <div class="divimg1"> <p style="line-height: 240px; text-align: center; color: gray;">Jeans under $50</p></div>
+        <div class="divimg2"><p style="line-height: 240px; text-align: center;color: gray;">Top under $50</p></div>
+      </div>
+      <div class="clothes2">
+        <div class="divimg11"><p style="line-height: 240px; text-align: center;color: gray;">Dress under $50</p></div>
+        <div class="divimg22"><p style="line-height: 240px; text-align: center;color: gray;">Shoes under $50</p></div>
+      </div>
+      <div class="letter11"> <a href="#" style="text-decoration: none; line-height: 30px; margin-left: 15px; font-size: 18px;"> See all deals</a></div>
+
+   </div>
+   <div class="get2">
+ <div class="letter111" style="line-height: 40px; font-size: 20px;margin-left: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> Shop for your home essentials </div>
+      <div class="clothes111">
+        <div class="divimg111"> <p style="line-height: 240px; text-align: center; color: gray;">cleaning tools</p></div>
+        <div class="divimg222"><p style="line-height: 240px; text-align: center;color: gray;">storage store</p></div>
+      </div>
+      <div class="clothes222">
+        <div class="divimg111"><p style="line-height: 240px; text-align: center;color: gray;">Home Decor</p></div>
+        <div class="divimg222"><p style="line-height: 240px; text-align: center;color: gray;">Bedding</p></div>
+      </div>
+      <div class="letter111"> <a href="#" style="text-decoration: none; line-height: 30px; margin-left: 15px; font-size: 18px;"> See all deals</a></div>
+
+
+   </div>
+  </section>
+<br>
+<br>
+  
+<!-- line 2 -->
+  <section class="start">
+  
+   <div class="get11">
+      <div class="letter1" style="line-height: 40px; font-size: 20px;margin-left: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> Shop Fashion for less </div>
+      <div class="clothes1">
+        <div class="divimg1"> <p style="line-height: 240px; text-align: center; color: gray;">Jeans under $50</p></div>
+        <div class="divimg2"><p style="line-height: 240px; text-align: center;color: gray;">Top under $50</p></div>
+      </div>
+      <div class="clothes2">
+        <div class="divimg11"><p style="line-height: 240px; text-align: center;color: gray;">Dress under $50</p></div>
+        <div class="divimg22"><p style="line-height: 240px; text-align: center;color: gray;">Shoes under $50</p></div>
+      </div>
+      <div class="letter11"> <a href="#" style="text-decoration: none; line-height: 30px; margin-left: 15px; font-size: 18px;"> See all deals</a></div>
+
+   </div>
+
+    <div class="get22" >
+    <span style="margin-left: 20px; line-height: 40px; font-size: 18px; font-family: Arial, Helvetica, sans-serif;font-weight: bold;"> Get Your Game on </span>
+    <div class="imgst"></div>
+      <span style="margin-left: 20px; line-height: 90px; font-size: 18px; font-family: Arial, Helvetica, sans-serif; "> <a href="#" style="text-decoration: none;">
+        Shop Gaming
+      </a> </span>
+   </div>
+   <div class="get33">
+ <div class="letter111" style="line-height: 40px; font-size: 20px;margin-left: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> Shop for your home essentials </div>
+      <div class="clothes111">
+        <div class="divimg111"> <p style="line-height: 240px; text-align: center; color: gray;">cleaning tools</p></div>
+        <div class="divimg222"><p style="line-height: 240px; text-align: center;color: gray;">storage store</p></div>
+      </div>
+      <div class="clothes222">
+        <div class="divimg111"><p style="line-height: 240px; text-align: center;color: gray;">Home Decor</p></div>
+        <div class="divimg222"><p style="line-height: 240px; text-align: center;color: gray;">Bedding</p></div>
+      </div>
+      <div class="letter111"> <a href="#" style="text-decoration: none; line-height: 30px; margin-left: 15px; font-size: 18px;"> See all deals</a></div>
+
+
+   </div>
+  </section>
+  </div>
+</body>
+</html>

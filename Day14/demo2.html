@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            width: 500px;
+            background: rgba(0,0,0,0.4);
+            margin: 100px auto;
+            padding: 50px;
+            box-sizing: border-box;
+            
+        }
+        div img{
+            height: 100%;
+            width: 100%;
+            transition: all 2s;
+            transform: right;
+        }
+        div img:hover{
+            /* transform: perspective(360px),rotateY(360deg); */
+            transition: all ease 5s;
+            /* transform-origin: 50% 50%; */
+            transform: perspective(200px) rotateY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="download2.webp">
+    </div>
+</body>
+</html>

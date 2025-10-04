@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact & Sign In</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f7f7f7;
+  }
+  .contact-container {
+    display: flex;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+  }
+  .map {
+    flex: 1;
+    position: relative;
+    margin-right: 20px;
+  }
+  .map button {
+    background: #28a745;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    z-index: 10;
+  }
+  .map img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+  }
+  .contact-form {
+    flex: 1;
+  }
+  .contact-form h2 {
+    margin-bottom: 15px;
+  }
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  .contact-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  .contact-form button {
+    margin-top: 15px;
+    background: linear-gradient(to right, #e91e63, #ff3a3a);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 100%;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="contact-container">
+  <div class="map">
+    <button>+1 (800) 343 0308</button>
+    <img src="download2.webp" alt="Map Image" />
+  </div>
+  <form class="contact-form">
+    <h2>Contact Us</h2>
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Name..." />
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Email address..." />
+    <label for="phone">Phone</label>
+    <input id="phone" type="tel" placeholder="Phone number..." />
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Questions/Comments..."></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout from Image</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 80px 120px 80px 40px 40px 40px 40px;
+      grid-template-rows: 60px 60px 120px;
+      gap: 0;
+    }
+
+    .cell {
+      border: 2px solid blue;
+      background-color: #e6e6ff; /* light purple default */
+    }
+
+    .green {
+      background-color: #e6ffe6 !important; /* light green */
+    }
+
+    /* Row 1 */
+    .c1 { grid-column: 1; grid-row: 1; }
+    .c2 { grid-column: 2; grid-row: 1; }
+    .c3 { grid-column: 3; grid-row: 1; }
+    .c4 { grid-column: 4; grid-row: 1; }
+    .c5 { grid-column: 5; grid-row: 1; }
+    .c6 { grid-column: 6; grid-row: 1; }
+    .c7 { grid-column: 7; grid-row: 1; }
+
+    /* Row 2 */
+    .c8  { grid-column: 1; grid-row: 2; }
+    .c9  { grid-column: 2 / span 3; grid-row: 2; }
+    .c10 { grid-column: 5; grid-row: 2; }
+    .c11 { grid-column: 6; grid-row: 2; }
+    .c12 { grid-column: 7; grid-row: 2; }
+
+    /* Row 3 */
+    .c13 { grid-column: 1; grid-row: 3; }
+    .c14 { grid-column: 2 / span 2; grid-row: 3; }
+    .c15 { grid-column: 4; grid-row: 3; }
+    .c16 { grid-column: 5; grid-row: 3; }
+    .c17 { grid-column: 6; grid-row: 3; }
+    .c18 { grid-column: 7; grid-row: 3; }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <!-- Row 1 -->
+    <div class="cell c1"></div>
+    <div class="cell c2 green"></div>
+    <div class="cell c3"></div>
+    <div class="cell c4"></div>
+    <div class="cell c5"></div>
+    <div class="cell c6"></div>
+    <div class="cell c7"></div>
+
+    <!-- Row 2 -->
+    <div class="cell c8 green"></div>
+    <div class="cell c9"></div>
+    <div class="cell c10 green"></div>
+    <div class="cell c11"></div>
+    <div class="cell c12 green"></div>
+
+    <!-- Row 3 -->
+    <div class="cell c13"></div>
+    <div class="cell c14 green"></div>
+    <div class="cell c15"></div>
+    <div class="cell c16 green"></div>
+    <div class="cell c17 green"></div>
+    <div class="cell c18"></div>
+  </div>
+
+</body>
+</html>

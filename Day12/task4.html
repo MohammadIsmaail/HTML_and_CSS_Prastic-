@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details Example</title>
+  <style>
+    body
+    {
+        background-color: steelblue;
+    }
+    details summary {
+      cursor: pointer;
+      padding: 8px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      margin: 5px 0;
+      border-radius: 6px;
+      background: #f9f9f9;
+      list-style: none;
+      width: 300px;
+      margin: 5px auto;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: " +";
+      float: right;
+      font-weight: bold;
+    }
+
+    details[open] summary::after {
+      content: " -";
+      float: right;
+      font-weight: bold;
+    }
+
+    details p {
+      padding: 10px;
+      background: #f1f1f1;
+      margin: 0;
+      width: 300px;
+      margin: 5px auto;
+    }
+  </style>
+</head>
+<body>
+  <details>
+    <summary>Have you heard about details?</summary>
+    <p>It's a pretty useful element that handles accordion / collapsed text natively!</p>
+  </details>
+
+  <details>
+    <summary>So how does it work?</summary>
+  </details>
+
+  <details>
+    <summary>But how do I set a custom title?</summary>
+  </details>
+  <details>
+    <summary>That is cool, but what about styles?</summary>
+  </details>
+  <details>
+    <summary>ok,ok,but what about styling based on state? </summary>
+  </details>
+  <details>
+    <summary>But this requires java script,right?</summary>
+  </details>
+  <details>
+    <summary>What about accessibility? is that the catch?</summary>
+  </details>
+  <details>
+    <summary>Excellent more information,please!</summary>
+  </details>
+  <details>
+    <summary>But What about cross-browser compatability?</summary>
+  </details>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            height: 400px;
+            width: 840px;
+            background-color: aqua;
+            margin: 50px auto;
+        }
+        .box1{
+            height: 200px;
+            width: 840px;
+            background-color: blue;
+        }
+        .box2{
+            height: 200px;
+            width: 840px;
+            background-color: #202e35;
+            border: 1px solid gray;
+        }
+        .row1{
+            height: 200px;
+            width: 210px;
+            float: left;
+            background-color:#202e35;
+            border: 1px solid gray;
+            
+        }
+        .row2{
+            height: 200px;
+            width: 210px;
+            float: left;
+            background-color: #202e35;
+            border: 1px solid gray;
+            
+        }
+        .row3{
+            height: 200px;
+            width: 210px;
+            float: left;
+            background-color: #202e35;
+            border: 1px solid gray;
+            
+        }
+        .row4{
+            height: 200px;
+            width: 210px;
+            float: left;
+            background-color: #202e35;
+            border: 1px solid gray;
+            
+        }
+         .row44{
+            height: 200px;
+            width: 210px;
+            float: left;
+            background-color: #202e35;
+            border: 1px solid gray;
+            
+        }
+        .row22{
+            height: 200px;
+            width: 208px;
+            float: left;
+            background-color:#202e35;
+            border: 1px solid gray;
+            
+        }
+        .row11{
+            height: 200px;
+            width: 210px;
+            float: left;
+            background-color: #202e35;
+            border: 1px solid gray;
+            
+        }
+        .row33{
+            height: 200px;
+            width: 210px;
+            float: left;
+            background-color: #202e35;
+            border: 1px solid gray;
+            
+        }
+        .loader1{
+            height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-left: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc 5s ease infinite;
+
+        }
+        .inner1{
+            height: 3px;
+            width: 3px;
+            background-color: #0e7875;
+            border-radius: 50%;
+            position: absolute;
+            border:5px solid #0e7875 ;
+            top: 31px;
+            left: 3px;
+           
+        }
+        @keyframes abc {
+            0%{
+               transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+
+  .loader2{
+            height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-left: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc1 5s ease infinite;
+
+        }
+        .inner2{
+            
+            background-color: #0e7875;
+            border-radius: 50%;
+            position: absolute;
+            
+            top: 31px;
+            left: 3px;
+           
+        }
+        @keyframes abc1 {
+            0%{
+               transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+
+          .loader3{
+            height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-bottom: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc2 5s ease infinite;
+            border-top: 2px solid #0e7875;
+
+        }
+        .inner3{
+           
+            background-color: #0e7875;
+            
+            position: absolute;
+            
+            top: 31px;
+            left: 3px;
+           
+        }
+        @keyframes abc2 {
+            0%{
+               transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+
+          .loader4{
+           height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-bottom: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc3 5s ease infinite;
+            border-left: 2px solid #0e7875;
+            
+
+        }
+        .inner4{
+            background-color: #0e7875;
+            position: absolute;
+            top: 31px;
+            left: 3px;
+           
+        }
+        @keyframes abc3 {
+            0%{
+               transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+         .loader5{
+           height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-bottom: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc4 5s ease infinite;
+            border-left: 2px solid #0e7875;
+            
+
+         
+
+        }
+
+         .loader6{
+           height: 100px;
+            width: 100px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-bottom: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc4 5s ease infinite;
+            border-left: 2px solid #0e7875;
+            
+
+        } 
+        .inner5{
+            background-color: #0e7875;
+            position: absolute;
+            top: 31px;
+            left: 3px;
+           
+        }
+        @keyframes abc4 {
+            0%{
+               transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+            
+        }
+
+
+         .loader8{
+           height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-left: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc5 5s ease infinite;
+            border-right: 2px solid #0e7875;
+            
+
+         
+
+        }
+
+         .loader9{
+           height: 100px;
+            width: 100px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-right: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc5 5s ease infinite;
+            border-left: 2px solid #0e7875;
+            
+
+        } 
+        .inner8{
+            background-color: #0e7875;
+            position: absolute;
+            top: 31px;
+            left: 3px;
+           
+        }
+        @keyframes abc5 {
+            0%{
+               transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+
+
+
+
+          .loader10{
+           height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-left: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc5 5s ease infinite;
+            
+            
+
+         
+
+        }
+
+         .loader11{
+           height: 100px;
+            width: 100px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-right: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc5 5s ease infinite;
+           
+         }
+
+         .loader12{
+           height: 60px;
+            width: 60px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-right: 2px solid #0e7875;
+            margin-top: 30px;
+            animation: abc5 5s ease infinite;
+         
+         }
+            
+
+
+           .loader8{
+           height: 150px;
+            width: 150px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-left: 2px solid red;
+            margin-top: 30px;
+            animation: abc5 5s ease infinite;
+            
+            
+
+         
+
+        }
+
+         .loader9{
+           height: 100px;
+            width: 100px;
+            border:  none;
+            border: 8px solid #202e35;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 30px;
+            border-right: 2px solid blue;
+            margin-top: 30px;
+            animation: abc5 5s ease infinite;
+          
+            
+
+        } 
+        .inner8{
+            background-color: #0e7875;
+            position: absolute;
+            top: 31px;
+            left: 3px;
+           
+        }
+        @keyframes abc5 {
+            0%{
+               transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="outer">
+       <div class="box1">
+        <div class="row1">
+            <div class="loader1">
+                <div class="inner1"></div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="loader2">
+                <div class="inner2"></div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="loader3">
+                <div class="inner3"></div>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="loader4">
+                <div class="inner4"></div>
+            </div>
+        </div>
+       </div>
+       <div class="box2">
+        <div class="row11">
+             <div class="loader5">
+                    <div class="loader6"></div>
+            </div>
+        </div>
+        <div class="row22">
+             <div class="loader8">
+                    <div class="loader9"></div>
+            </div>
+        </div>
+        <div class="row33">
+            <div class="loader10">
+                    <div class="loader11">
+                        <div class="loader12"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="row44">
+             <div class="loader8">
+                    <div class="loader9"></div>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

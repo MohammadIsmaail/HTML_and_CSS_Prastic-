@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Exact Div Layout</title>
+<style>
+  :root{
+    /* proportions same as image */
+    --w1: 36fr;  /* left big */
+    --w2: 5fr;   /* thin 1 */
+    --w3: 5fr;   /* thin 2 */
+    --w4: 34fr;  /* center big */
+    --w5: 20fr;  /* right big */
+    --h1: 40fr;  /* top big row */
+    --h2: 15fr;  /* second row */
+    --h3: 8fr;   /* stripe 1 */
+    --h4: 8fr;   /* stripe 2 */
+    --h5: 8fr;   /* stripe 3 */
+    --h6: 21fr;  /* bottom row */
+  }
+
+  .wrap{
+    width: 900px; height: 520px;
+    display: grid;
+    grid-template-columns: var(--w1) var(--w2) var(--w3) var(--w4) var(--w5);
+    grid-template-rows: var(--h1) var(--h2) var(--h3) var(--h4) var(--h5) var(--h6);
+    border: 2px solid #1144ff;
+  }
+  .cell{
+    border: 2px solid #1144ff;
+    box-sizing: border-box;
+  }
+  .blue{ background:#dfe2ff; }   /* light blue */
+  .green{ background:#dfffe0; }  /* light green */
+  .blank{ background:#ffffff; }  /* small white boxes seen in image */
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <!-- Row 1 (Top) -->
+  <div id="r1c1" class="cell blue"></div>
+  <div id="r1c2" class="cell green"></div>
+  <div id="r1c3" class="cell blue"></div>
+  <div id="r1c4" class="cell blue"></div>
+  <div id="r1c5" class="cell green"></div>
+
+  <!-- Row 2 -->
+  <div id="r2c1" class="cell green"></div>
+  <div id="r2c2" class="cell green"></div>
+  <div id="r2c3" class="cell blank"></div>   <!-- tiny white box -->
+  <div id="r2c4" class="cell green"></div>
+  <div id="r2c5" class="cell blue"></div>
+
+  <!-- Row 3 (thin stripe 1) -->
+  <div id="r3c1" class="cell blue"></div>
+  <div id="r3c2" class="cell blue"></div>
+  <div id="r3c3" class="cell blue"></div>
+  <div id="r3c4" class="cell blue"></div>
+  <div id="r3c5" class="cell green"></div>
+
+  <!-- Row 4 (thin stripe 2) -->
+  <div id="r4c1" class="cell blue"></div>
+  <div id="r4c2" class="cell blue"></div>
+  <div id="r4c3" class="cell blue"></div>
+  <div id="r4c4" class="cell green"></div>
+  <div id="r4c5" class="cell blue"></div>
+
+  <!-- Row 5 (thin stripe 3) -->
+  <div id="r5c1" class="cell blue"></div>
+  <div id="r5c2" class="cell blank"></div>   <!-- tiny white box -->
+  <div id="r5c3" class="cell blue"></div>
+  <div id="r5c4" class="cell blue"></div>
+  <div id="r5c5" class="cell green"></div>
+
+  <!-- Row 6 (Bottom) -->
+  <div id="r6c1" class="cell green"></div>
+  <div id="r6c2" class="cell blank"></div>   <!-- thin white strip -->
+  <div id="r6c3" class="cell blue"></div>
+  <div id="r6c4" class="cell green"></div>
+  <div id="r6c5" class="cell blue"></div>
+</div>
+
+</body>
+</html>

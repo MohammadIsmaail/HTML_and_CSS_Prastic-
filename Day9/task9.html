@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ludo — HTML + CSS (float:left only)</title>
+<style>
+  /* Board box */
+  .board {
+    width: 660px;       /* change size if you want */
+    height: 660px;
+    border: 3px solid #111;
+    margin: 18px auto;
+    box-sizing: border-box;
+    font-size: 0; /* remove gaps between inline blocks */
+    position: relative;
+    padding: 0;
+  }
+
+  /* Each cell: 1/15 of board */
+  .cell {
+    float: left;
+    width: calc(100% / 15);
+    height: calc(100% / 15);
+    box-sizing: border-box;
+    border: 1px solid #999;
+    position: relative;
+  }
+
+  /* colors */
+  .blue { background: #2b6ef6; }
+  .red  { background: #e04747; }
+  .yellow { background: #f3c14a; }
+  .green { background: #18a558; }
+  .white { background: #fff; }
+  .path  { background: #ffffff; } /* path / neutral squares */
+
+  /* homes inner square (to mimic real Ludo bigger inner white area) */
+  .home-inner {
+    position: absolute;
+    inset: 10%;
+    background: #fff;
+    box-sizing: border-box;
+    border: 2px solid rgba(0,0,0,0.05);
+  }
+
+  /* center 3x3 special */
+  .center-cell { background: #fff; }
+
+  /* center diamond: we use one central cell (row8 col8) subdivided into 4 quarters */
+  .center-quad { width:50%; height:50%; float:left; box-sizing:border-box; }
+
+  /* optional small circles to show tokens visually (purely decorative) */
+  .dot {
+    width: 22%;
+    height: 22%;
+    border-radius:50%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+
+  /* small labels for debugging (turn off after) */
+  .lbl { position:absolute; left:4px; top:2px; font-size:9px; color:rgba(0,0,0,0.45); }
+
+  /* clear float after board if necessary */
+  .clear { clear: both; display:block; }
+  @media (max-width:700px){ .board{width:95vw;height:95vw} }
+</style>
+</head>
+<body>
+
+<div class="board" aria-label="Ludo board (15 by 15)">
+
+  <!-- Row 1 (r=1) -->
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+
+  <!-- Row 2 (r=2) -->
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+
+  <!-- Row 3 (r=3) -->
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+
+  <!-- Row 4 (r=4) -->
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+
+  <!-- Row 5 (r=5) -->
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+
+  <!-- Row 6 (r=6) -->
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell blue"><div class="home-inner"></div></div><div class="cell blue"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+  <div class="cell red"><div class="home-inner"></div></div><div class="cell red"><div class="home-inner"></div></div>
+
+  <!-- Row 7 (r=7) - top path area -->
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell red"></div><div class="cell center-cell">
+    <!-- center top-left quarter = blue, top-right = red, bottom-left = yellow, bottom-right = green -->
+    <div style="width:50%;height:50%;float:left;background:#2b6ef6"></div>
+    <div style="width:50%;height:50%;float:left;background:#e04747"></div>
+    <div style="width:50%;height:50%;float:left;background:#f3c14a"></div>
+    <div style="width:50%;height:50%;float:left;background:#18a558"></div>
+  </div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+
+  <!-- Row 8 (r=8) center cross row -->
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+
+  <!-- Row 9 (r=9) bottom path area -->
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell yellow"></div><div class="cell center-cell">
+    <div style="width:50%;height:50%;float:left;background:#2b6ef6"></div>
+    <div style="width:50%;height:50%;float:left;background:#e04747"></div>
+    <div style="width:50%;height:50%;float:left;background:#f3c14a"></div>
+    <div style="width:50%;height:50%;float:left;background:#18a558"></div>
+  </div><div class="cell green"></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+
+  <!-- Row 10 (r=10) -->
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+
+  <!-- Row 11 (r=11) -->
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+
+  <!-- Row 12 (r=12) -->
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+
+  <!-- Row 13 (r=13) -->
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+
+  <!-- Row 14 (r=14) -->
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>
+  <div class="cell white"></div><div class="cell white"></div><div class="cell white"></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+  <div class="cell green"><div class="home-inner"></div></div><div class="cell green"><div class="home-inner"></div></div>
+
+  <!-- Row 15 (r=15) -->
+  <div class="cell yellow"><div class="home-inner"></div></div><div class="cell yellow"><div class="home-inner"></div></div>

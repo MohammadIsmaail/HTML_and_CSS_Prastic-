@@ -1,0 +1,14 @@
+
+/* External CSS for tasks */
+h1.task2 { color: darkblue; font-size: 40px; text-align: center; }
+p.task5 { color: red; text-align: center; font-size: 18px; }
+h4.task8 { letter-spacing: 3px; color: orange; font-size: 22px; }
+h1.task14 { color: purple; font-size: 36px; text-align: center; }
+p.task17 { font-size: 18px; font-weight: bold; color: navy; }
+h4.task20 { border: 2px solid blue; background-color: lightyellow; text-align: center; }
+p.task23 { border: 1px solid black; word-spacing: 15px; color: #444; }
+h1.task26 { color: red; text-align: center; letter-spacing: 4px; }
+p.task29 { border: 2px inset black; letter-spacing: 2px; padding: 10px; }
+p.task31 { color: darkred; font-size: 18px; text-align: justify; }
+h2.task32 { background-color: lightgreen; border: 2px solid black; text-align: center; }
+h4.task33 { font-style: italic; color: navy; letter-spacing: 3px; }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ad7fec,#6c59e7 );
+        }
+
+        .outer {
+            height: 500px;
+            width: 800px;
+            margin: 50px auto;
+            background-color: aqua;
+        }
+
+        .bl {
+            height: 500px;
+            width: 400px;
+            background-color: #02b3d2;
+            float: left;
+        }
+
+        .bl2 {
+            background-color: #accff1;
+        }
+
+        .te {
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            font-weight: bold;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .te1,
+        .te2 {
+            color: white;
+            text-align: center;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .bl22 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .me {
+            padding-left: 45px;
+            height: 40px;
+            border: none;
+            width: 250px;
+            margin-bottom: 15px;
+            margin-left: 30px;
+            border-radius: 5px;
+        }
+
+        .me1 {
+            padding-left: 45px;
+            width: 250px;
+            border: none;
+            margin-bottom: 16px;
+            margin-left: 30px;
+            border-radius: 5px;
+        }
+         
+        .me11 {
+            margin-left: 30px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: black;
+        }
+
+        .btn {
+            background-color: #2ccaf1;
+            height: 40px;
+            width: 100px;
+            border: none;
+            color: white;
+            border-radius: 50px;
+            margin-left: 110px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #005c91;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="bl">
+            <p class="te">Let's Chat</p>
+            <p class="te1">Whether you have a question or just want to chat,<br> I'm here to help!</p>
+            <p class="te2">Feel free to send us a message in the contact<br> form.</p>
+        </div>
+
+        <div class="bl bl2">
+        
+            <h1 class="bl22">Contact</h1>
+            
+            <!-- Form Start -->
+            
+            <label>
+                <p class="me11">*Required</p>
+                <input type="text" class="me" placeholder="Name*">
+            </label><br>
+
+            <label>
+                <input type="email" class="me" placeholder="Email*">
+            </label><br>
+
+            <label>
+                <input type="text" class="me" placeholder="Country">
+            </label><br>
+
+            <label>
+                <input type="number" class="me" placeholder="Phone">
+            </label><br>
+
+            <label>
+                <textarea class="me1" placeholder="Message" cols="25" rows="5"></textarea>
+            </label><br>
+
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>

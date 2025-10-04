@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Task 6</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <style>
+            *{
+                margin: 0;padding: 0;box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .main{
+                height: 900px;
+                width: 1200px;
+                --color:rgba(0,128,0,.7);
+                margin: 0px auto;
+            }
+            .up{
+                height: 70px;
+                width: 1200px;
+            }
+            .a{
+                height: 70px;
+                width: 400px;
+                float: left;
+                padding: 10px 20px;
+                font-size: 20px;
+            }
+            .a i{
+                border-radius: 50%;
+                color: var(--color);
+                font-size: 30px;
+                margin-right: 10px;
+            }
+            nav{
+                height: 60px;
+                width: 1200px;
+                background: var(--color);
+                padding: 0px 280px;
+            }
+            ul{
+                height: 60px;
+                width: 640px;
+                list-style: none;
+            }
+            li{
+                height: 60px;
+                width: 100px;
+                float: left;
+                line-height: 60px;
+                text-align: center;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: lighter;
+            }
+            .hero{
+                height: 400px;
+                width: 1200px;
+                background: url("img/t6.jpg");
+                background-size: cover ;
+            }
+            .b{
+                height: 400px;
+                width: 600px;
+                float: left;
+                padding: 100px;
+                backdrop-filter: blur(5px);
+            }
+            .b h1{
+                font-size: 50px;
+                color: white;
+                margin-bottom: 30px;
+            }
+            button{
+                height: 50px;
+                width: 120px;
+                background:rgba(0,255,0,.7) ;
+                color: white;
+                border: none;
+                margin-right: 20px;
+                font-weight: bold;
+            }
+            .c{
+                height: 400px;
+                width: 600px;
+                float: left;
+                padding: 100px;
+                backdrop-filter: blur(5px);
+                background-image: url("img/t61.png");
+                background-size: cover;
+            }
+            .product{
+                height: 300px;
+                width: 1200px;
+                text-align: center;
+            }
+            p{
+                color: var(--color);
+                margin-top: 40px;
+            }
+            h2{
+                font-size: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="up">
+                <div class="a"><i class="ri-cellphone-fill" style="color: var(--color);"></i>+012 345 6789</div>
+                <div class="a" style="font-size: 35px; font-weight: bold; "><font color="orange">Farm</font><font color="lightgreen">Fresh</font></div>
+                <div class="a" style="text-align: right;padding: 16px 0px;"><i class="ri-twitter-fill"></i><i class="ri-facebook-circle-fill"></i><i class="ri-linkedin-box-fill"></i><i class="ri-instagram-line"></i></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li style="background-color: orange;"><a href="#">PRODUCT</a></li>
+                    <li><a href="#">PAGES <i class="ri-arrow-down-s-fill"></i></a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <div class="b">
+                    <h1>Our Products</h1>
+                    <button>Home</button>
+                    <button style="width: 150px; background: orange;">Products</button>
+                </div>
+                <div class="c"></div>
+            </div>
+            <div class="product">
+                <p>PRODUCTS</p>
+                <h2>Our Fresh & Organic <br>Products</h2>
+            </div>
+        </div>
+    </body>
+</html>

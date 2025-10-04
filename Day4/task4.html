@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4 - Travel Reservation</title>
+</head>
+<body>
+    <h2>Travel reservation form</h2>
+    <p>* denotes mandatory</p>
+    <form>
+        <label>Full name*:</label><br>
+        <input type="text" placeholder="FirstName LastName" required><br><br>
+
+        <label>Email address*:</label><br>
+        <input type="email" placeholder="EMAIL_ADDRESS" required><br><br>
+
+        <label>Select Tour Package*:</label><br>
+        <select required>
+            <option>Goa</option>
+            <option>Delhi</option>
+            <option>Kerala</option>
+        </select><br><br>
+
+        <label>Arrival date*:</label><br>
+        <input type="date" required><br><br>
+
+        <label>Number of persons*:</label><br>
+        <input type="number" required><br><br>
+
+        <label>What would you want to avail?*:</label><br>
+        <input type="checkbox"> Boarding<br>
+        <input type="checkbox"> Fooding<br>
+        <input type="checkbox"> Sight seeing<br><br>
+
+        <label>Discount Coupon code:</label><br>
+        <input type="text"><br><br>
+
+        <label>Terms and conditions*:</label><br>
+        <input type="radio" name="terms" required> I agree
+        <input type="radio" name="terms"> I disagree<br><br>
+
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+</html>

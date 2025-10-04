@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            font-size: 30px;
+        }
+        a:active{
+            color: aqua;
+            font-size: 0px;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: brown;
+        }
+        /* tr:first-child{
+            background-color: black;
+            color: wheat;
+        }
+        tr:last-child{
+            background-color:black;
+            color:wheat;
+        } */
+        /* tr:nth-child(odd){
+            background-color: blue;
+        }
+        tr:nth-child(even){
+            background-color: yellow;
+        } */
+        tr:nth-child(5){
+            background-color: violet;
+        }
+        tr:nth-child(6){
+            background-color: aqua;
+        }
+
+        input:focus{
+            outline: none;
+            background-color: red;
+            border: none;
+            border: 3px solid yellow;
+        }
+        input:disabled{
+            opacity: .2;
+            border: 4px solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="download2.webp">Link</a>
+    <hr>
+    <table border="1" background="red" cellpadding="15px" cellspacing="0px" style="border: 1px solid red;" >
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <th>Ismaail</th>
+            <th>Lucknow</th>
+            <th>B.Tech</th>
+        </tr>
+        <tr>
+            <th>Ismaail</th>
+            <th>Lucknow</th>
+            <th>B.Tech</th>
+        </tr>
+        <tr>
+            <th>Ismaail</th>
+            <th>Lucknow</th>
+            <th>B.Tech</th>
+        </tr>
+         <tr>
+            <th>Ismaail</th>
+            <th>Lucknow</th>
+            <th>B.Tech</th>
+        </tr>
+         <tr>
+            <th>Ismaail</th>
+            <th>Lucknow</th>
+            <th>B.Tech</th>
+        </tr>
+         <tr>
+            <th>Ismaail</th>
+            <th>Lucknow</th>
+            <th>B.Tech</th>
+        </tr>
+    </table>
+    <br>
+    <input list="a"  placeholder="select options">
+    <!-- <datalist id="a">
+        <option>Hello</option>
+        <option>Bhalu</option>
+        <option>Natahawa</option>
+        <option>Bhata</option>        
+        <option>Bhawander</option>        
+        <option>tabahi</option>        
+
+    </datalist> -->
+</body>
+</html>

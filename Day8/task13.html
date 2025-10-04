@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Grid Layout</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(7, 120px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 0;
+    border: 2px solid blue;
+    width: max-content;
+  }
+  .cell {
+    border: 1.5px solid blue;
+    box-sizing: border-box;
+  }
+  /* Specific merged cells */
+  .span-col-2 {
+    grid-column: span 2;
+  }
+  .span-row-2 {
+    grid-row: span 2;
+  }
+  .span-col-3 {
+    grid-column: span 3;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="cell span-col-2"></div>
+    <div class="cell"></div>
+    <div class="cell span-col-2"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+
+    <!-- Row 2 -->
+    <div class="cell span-row-2"></div>
+    <div class="cell"></div>
+    <div class="cell span-col-2 span-row-2"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+
+    <!-- Row 3 -->
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+
+    <!-- Row 4 -->
+    <div class="cell span-row-2"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+
+    <!-- Row 5 -->
+    <div class="cell"></div>
+    <div class="cell span-col-3"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+</body>
+</html>

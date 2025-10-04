@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML CSS Login Form</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f3e0e2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.login-left,
+.login-right {
+  padding: 40px;
+  width: 50%;
+}
+
+.login-left {
+  background-color: #fff;
+}
+
+.login-left h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 25px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.forgot {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #3179b7;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 40%;
+  padding: 10px;
+  margin-left: 70px;
+  background-color: #ff4c60;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e04454;
+}
+
+.login-right {
+  background: linear-gradient(to right, #ff4c60, #ff6e7f);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h2 {
+  margin-bottom: 15px;
+}
+
+.login-right p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.icon{
+    padding-left: 90px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-left">
+      <h2>Login</h2>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png" alt="Facebook" class="icon" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/twitter.png" alt="Twitter" class="ico" /></a>
+      <p style="text-align: center;">or use your account</p>
+    </div>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <a href="#" class="forgot">Forgot your password?</a>
+        <button type="submit" class="btn">LOG IN</button>
+      </form>
+    </div>
+
+    <div class="login-right">
+      <h2>HTML CSS Login Form</h2>
+      <p>
+        This login form is created using pure HTML and CSS. No frameworks, no JavaScript — simple and clean.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

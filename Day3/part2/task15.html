@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>My feedback form</h1>
+    <form>
+        <ul>
+            <li>Name: <input type="text" name="name"></li><br/>
+            <li>Email: <input type="email" name="email"></li><br/>
+            <li>Password: <input type="password" name="password"></li><br/>
+            <li>
+                Please check all the emotions that apply to you:
+                <ul>
+                    <li>Angry <input type="checkbox" name="emotion" value="angry" checked></li>
+                    <li>Sad <input type="checkbox" name="emotion" value="sad"></li>
+                    <li>Happy <input type="checkbox" name="emotion" value="happy"></li>
+                    <li>Ambivalent <input type="checkbox" name="emotion" value="ambivalent"></li><br/>
+                </ul>
+            </li>
+            <li>
+                How satisfied were you with our service?
+                <ul>
+                    <li>Very satisfied <input type="radio" name="satisfaction" value="very_satisfied" checked></li>
+                    <li>Satisfied <input type="radio" name="satisfaction" value="satisfied"></li>
+                    <li>Didn't care <input type="radio" name="satisfaction" value="didnt_care"></li>
+                    <li>Dissatisfied <input type="radio" name="satisfaction" value="dissatisfied"></li>
+                    <li>Very dissatisfied <input type="radio" name="satisfaction" value="very_dissatisfied"></li><br/>
+                </ul>
+            </li>
+            <li>Further comments: <textarea name="comments"></textarea></li><br/>
+            <li>Bio photo: <input type="file" name="bio_photo"></li><br/>
+            <li>Location visited: 
+                <select name="location">
+                    <option value="" selected>Select location</option>
+                    <option value="location1">Location 1</option>
+                    <option value="location2">Location 2</option>
+                    <option value="location3">Location 3</option>
+                </select>
+            </li><br/>
+            <li><button type="submit">submit</button></li>
+        </ul>
+    </form>
+</body>
+</html>

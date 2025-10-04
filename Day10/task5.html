@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(57, 25, 196);
+            margin: 100px auto;
+        }
+
+        .inner {
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            background-color: rgb(214, 20, 156);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .inner1{
+            height: 150px;
+            width: 200px;
+            position: absolute;
+            left: 25px;
+            background-color: yellow;
+            bottom:50%;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            border: 3px dotted black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="inner1"> 
+                Test
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

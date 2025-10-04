@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Calculator</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background: #f5f5f5;
+  }
+
+  .calc {
+    width: 290px;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .display {
+    width: 240px;
+    height: 60px;
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    margin: 10px auto;
+    line-height: 60px;
+  }
+
+  .btn {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #555;
+    color: white;
+  }
+
+  .btn.orange {
+    background: orange;
+    color: white;
+  }
+
+  .btn.zero {
+    width: 110px;
+    border-radius: 25px;
+  }
+
+  .row { clear: both; }
+</style>
+</head>
+<body>
+
+<div class="calc">
+  <div class="display">7744</div>
+
+  <!-- Row 1 -->
+  <div class="btn">C</div>
+  <div class="btn">+/-</div>
+  <div class="btn">%</div>
+  <div class="btn orange">÷</div>
+  <div class="row"></div>
+
+  <!-- Row 2 -->
+  <div class="btn">7</div>
+  <div class="btn">8</div>
+  <div class="btn">9</div>
+  <div class="btn orange">×</div>
+  <div class="row"></div>
+
+  <!-- Row 3 -->
+  <div class="btn">4</div>
+  <div class="btn">5</div>
+  <div class="btn">6</div>
+  <div class="btn orange">-</div>
+  <div class="row"></div>
+
+  <!-- Row 4 -->
+  <div class="btn">1</div>
+  <div class="btn">2</div>
+  <div class="btn">3</div>
+  <div class="btn orange">+</div>
+  <div class="row"></div>
+
+  <!-- Row 5 -->
+  <div class="btn zero">0</div>
+  <div class="btn">,</div>
+  <div class="btn orange">=</div>
+  <div class="row"></div>
+</div>
+
+</body>
+</html>

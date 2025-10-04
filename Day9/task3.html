@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calc {
+            width: 220px;
+            background-color: navy;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 40px auto;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            border: 1px solid #000;
+            float: left;
+            border-radius: 8px;
+            background-color: white;
+            color:black;
+            font-size: 18px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .btn.gr {
+            background-color: gray;
+        }
+
+        .btn.red {
+            background-color: red;
+        }
+
+        .btn.equal {
+            background-color: black;
+            width: 50px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .display {
+            width: 200px;
+            height: 40px;
+            margin: 5px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            text-align: right;
+            font-size: 18px;
+            line-height: 40px;
+            padding-right: 5px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calc">
+        <div class="display">Ans</div>
+
+        <div class="btn gr">(</div>
+        <div class="btn gr">)</div>
+        <div class="btn red"> C</div>
+        <div class="btn red">x</div>
+        <div class="clear"></div>
+
+        <div class="btn gr">%</div>
+        <div class="btn gr">X<sup>2</sup></div>
+        <div class="btn gr">√x</div>
+        <div class="btn gr ">÷</div>
+        <div class="clear"></div>
+
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn gr">*</div>
+        <div class="clear"></div>
+
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn gr">-</div>
+        <div class="clear"></div>
+
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn gr">+</div>
+        <div class="clear"></div>
+
+        <div class="btn gr">+/-</div>
+        <div class="btn">0</div>
+        <div class="btn gr">.</div>
+        <div class="btn equal" style="color: white;">=</div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>

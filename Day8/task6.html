@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exact Grid Layout</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 60px);
+      grid-template-rows: repeat(5, 60px);
+      gap: 0;
+      border: 2px solid black;
+    }
+
+    .cell {
+      border: 2px solid blue;
+      background-color: #e6e6ff; /* default light purple */
+    }
+
+    .green {
+      background-color: #e6ffe6 !important;
+    }
+
+    /* Positioning cells */
+    .a { grid-column: 1; grid-row: 1; }
+    .b { grid-column: 2; grid-row: 1; }
+    .c { grid-column: 3; grid-row: 1; }
+    .d { grid-column: 4; grid-row: 1; }
+    .e { grid-column: 5; grid-row: 1 / span 2; } /* rowspan */
+    .f { grid-column: 6; grid-row: 1 / span 2; } /* rowspan */
+
+    .g { grid-column: 1; grid-row: 2; }
+    .h { grid-column: 2; grid-row: 2; }
+    .i { grid-column: 3; grid-row: 2; }
+    .j { grid-column: 4; grid-row: 2; }
+
+    .k { grid-column: 1; grid-row: 3; }
+    .l { grid-column: 2; grid-row: 3; }
+    .m { grid-column: 3; grid-row: 3; }
+    .n { grid-column: 4; grid-row: 3; }
+    .o { grid-column: 5; grid-row: 3; }
+    .p { grid-column: 6; grid-row: 3; }
+
+    .q { grid-column: 1; grid-row: 4; }
+    .r { grid-column: 2; grid-row: 4; }
+    .s { grid-column: 3; grid-row: 4; }
+    .t { grid-column: 4; grid-row: 4; }
+    .u { grid-column: 5 / span 2; grid-row: 4; } /* colspan */
+
+    .v { grid-column: 1; grid-row: 5; }
+    .w { grid-column: 2; grid-row: 5; }
+    .x { grid-column: 3; grid-row: 5; }
+    .y { grid-column: 4; grid-row: 5; }
+    .z { grid-column: 5; grid-row: 5; }
+    .aa { grid-column: 6; grid-row: 5; }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <!-- Row 1 -->
+    <div class="cell a green"></div>
+    <div class="cell b"></div>
+    <div class="cell c green"></div>
+    <div class="cell d"></div>
+    <div class="cell e"></div> <!-- rowspan -->
+    <div class="cell f green"></div> <!-- rowspan -->
+
+    <!-- Row 2 -->
+    <div class="cell g"></div>
+    <div class="cell h green"></div>
+    <div class="cell i"></div>
+    <div class="cell j green"></div>
+    <!-- e and f continue here due to rowspan -->
+
+    <!-- Row 3 -->
+    <div class="cell k green"></div>
+    <div class="cell l"></div>
+    <div class="cell m green"></div>
+    <div class="cell n"></div>
+    <div class="cell o green"></div>
+    <div class="cell p"></div>
+
+    <!-- Row 4 -->
+    <div class="cell q"></div>
+    <div class="cell r green"></div>
+    <div class="cell s"></div>
+    <div class="cell t green"></div>
+    <div class="cell u"></div> <!-- colspan 2 -->
+
+    <!-- Row 5 -->
+    <div class="cell v green"></div>
+    <div class="cell w"></div>
+    <div class="cell x green"></div>
+    <div class="cell y"></div>
+    <div class="cell z green"></div>
+    <div class="cell aa"></div>
+  </div>
+</body>
+</html>

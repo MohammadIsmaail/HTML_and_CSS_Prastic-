@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            position: relative;
+            height: 200px;
+            width: 500px;
+            background-color: rgb(57, 25, 196);
+            margin: 100px auto;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25px;
+            border: 2px solid black;
+        }
+
+        .inner {
+            position: absolute;
+            height: 125px;
+            width: 400px;
+            background-color: rgb(214, 20, 156);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            text-align: center;
+            line-height: 80px;
+            font-size: 25px;
+            border: 2px solid black;
+        }
+        .inner1{
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            left: 25px;
+            background-color: yellow;
+            bottom:50%;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            transform: translate(0%, 100%);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer"> Parent
+        <div class="inner"> Child
+            <div class="inner1"> 
+                element
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

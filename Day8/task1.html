@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout</title>
+    <style>
+        #container {
+            width: 600px;
+            border: 2px solid blue;
+        }
+        .box {
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        .green {
+            background-color: #ccffcc; /* light green */
+        }
+        .blue {
+            background-color: #d9d9ff; /* light blue */
+        }
+        /* Row styles */
+        #row1, #row2, #row3, #row4, #row5 {
+            display: flex;
+        }
+        /* Box sizes */
+        #row1 div { height: 40px; flex: 1; }
+        #row2 div { height: 30px; flex: 1; }
+        #row3 div { height: 80px; flex: 1; }
+        #row4 div { height: 100px; flex: 1; }
+        #row5 div { height: 80px; flex: 1; }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <!-- Row 1 -->
+    <div id="row1">
+        <div id="b1" class="box blue"></div>
+        <div id="b2" class="box green"></div>
+        <div id="b3" class="box blue"></div>
+    </div>
+
+    <!-- Row 2 -->
+    <div id="row2">
+        <div id="b4" class="box green"></div>
+        <div id="b5" class="box blue"></div>
+        <div id="b6" class="box green"></div>
+    </div>
+
+    <!-- Row 3 -->
+    <div id="row3">
+        <div id="b7" class="box blue"></div>
+        <div id="b8" class="box green"></div>
+        <div id="b9" class="box blue"></div>
+    </div>
+
+    <!-- Row 4 -->
+    <div id="row4">
+        <div id="b10" class="box green"></div>
+        <div id="b11" class="box blue"></div>
+        <div id="b12" class="box green"></div>
+    </div>
+
+    <!-- Row 5 -->
+    <div id="row5">
+        <div id="b13" class="box blue"></div>
+        <div id="b14" class="box green"></div>
+        <div id="b15" class="box blue"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

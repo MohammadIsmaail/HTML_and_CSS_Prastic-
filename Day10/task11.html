@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-image:url("download2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-blend-mode: lighten; */
+        background-color: rgba(233, 25, 255, 0.7);
+        background-blend-mode: multiply; /* ✅ This keeps both image + color visible */
+    }
+    .outer{
+       height:510px;
+       width:500px;
+       margin:70px auto;
+       border-radius: 5px;
+       background-color:white;
+    }
+    .box{
+       text-align: center;
+       line-height: 80px;
+       font-size: 30px;
+       font-weight: bold;
+    }
+    .n{
+        margin-left: 20px;
+         font-size: 20px;
+    }
+    .fname{
+        margin-left: 20px;
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 15px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        
+        border: none;
+        border-bottom: 1px solid black;
+        /* background: transparent;
+        outline: none; */
+    }
+    .ame{
+        margin-left: 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid black;
+        
+    }
+    ::placeholder{
+        
+        font-size: 15px;
+        color: black;
+    }
+    .btn{
+        background: linear-gradient(45deg,#e02a91, #ff6126);
+        border: none;
+        height: 40px;
+        width: 200px;
+        color: white;
+        font-size: 17px;
+        margin-left: 90px;
+    }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box"> Contact Us</div>
+        <span class="n">Name:</span>
+        <br><input type="text" placeholder="Ismaail" class="fname"><br><br>
+        
+        <input type="email" placeholder="EMAIL" class="fname"><br><br>
+     
+        <textarea rows="7" cols="40" class="ame" placeholder="MESSAGE"></textarea><br><br>
+        <button class="btn">Send Your Message</button>
+    </div>
+</body>
+</html>

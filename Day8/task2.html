@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Divisions - Layout 2</title>
+    <style>
+        #container {
+            width: 700px;
+            border: 2px solid blue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        .green { background-color: #ccffcc; }
+        .blue { background-color: #d9d9ff; }
+
+        /* Sizes for big columns (top section) */
+        #b1 { width: 16.66%; height: 200px; }  /* first tall box */
+        #b2 { width: 16.66%; height: 200px; }
+        #b3 { width: 16.66%; height: 200px; }
+        #b4 { width: 8.33%; height: 200px; }
+        #b5 { width: 16.66%; height: 200px; }
+        #b6 { width: 25%; height: 200px; }
+
+        /* Second row (middle small boxes) */
+        #b7 { width: 16.66%; height: 50px; }
+        #b8 { width: 16.66%; height: 50px; }
+        #b9 { width: 16.66%; height: 50px; }
+        #b10 { width: 8.33%; height: 50px; }
+        #b11 { width: 16.66%; height: 50px; }
+        #b12 { width: 25%; height: 50px; }
+
+        /* Third row (bottom small boxes) */
+        #b13 { width: 16.66%; height: 50px; }
+        #b14 { width: 16.66%; height: 50px; }
+        #b15 { width: 16.66%; height: 50px; }
+        #b16 { width: 8.33%; height: 50px; }
+        #b17 { width: 16.66%; height: 50px; }
+        #b18 { width: 25%; height: 50px; }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <!-- Top large boxes -->
+    <div id="b1" class="box blue"></div>
+    <div id="b2" class="box green"></div>
+    <div id="b3" class="box blue"></div>
+    <div id="b4" class="box green"></div>
+    <div id="b5" class="box green"></div>
+    <div id="b6" class="box blue"></div>
+
+    <!-- Middle row -->
+    <div id="b7" class="box green"></div>
+    <div id="b8" class="box blue"></div>
+    <div id="b9" class="box green"></div>
+    <div id="b10" class="box blue"></div>
+    <div id="b11" class="box green"></div>
+    <div id="b12" class="box blue"></div>
+
+    <!-- Bottom row -->
+    <div id="b13" class="box blue"></div>
+    <div id="b14" class="box green"></div>
+    <div id="b15" class="box blue"></div>
+    <div id="b16" class="box green"></div>
+    <div id="b17" class="box blue"></div>
+    <div id="b18" class="box green"></div>
+</div>
+
+</body>
+</html>

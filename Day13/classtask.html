@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+       #outer{
+          min-height: 500px;
+          width: 1358px;
+          background-color: aqua;
+       }
+       .logo{
+        height: 50px;
+        width: 200px;
+        background-color: white;
+        float: left;
+       }
+         .nav{
+          height: 50px;
+          width: 1158px;
+          background-color: white;
+          float: left;
+         }
+         nav ul li{
+            float: left;
+            list-style: none;
+            padding: 15px;
+            font-size: 20px;
+            transform: translateX(290px);
+            color: black;
+         }
+         .btn{
+            float: right;
+            margin: 6px;
+            padding: 5px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #a34442;
+            transform: translateX(-90px);
+         }
+         .p{
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+         }
+            .slider{
+                height: 500px;
+                width: 1358px;
+                background-color: yellow;
+                clear: both;
+                background-image: url("man2.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .pp{
+                text-align: center;
+                line-height: 20px;
+                font-size: 15px;
+                color: rebeccapurple;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .box{
+                height: 300px;
+                width: 300px;
+                background-color: rgba(255, 255, 255, 0.0);
+                transform: translateX(300px) translateY(100px);
+            }
+            h1{
+                
+                margin-left: 20px;
+                font-size: 30px;
+                color: black;
+            }
+    </style>
+</head>
+<body>
+     <div id="outer">
+        <div class="logo">
+            <img src="download2.webp" alt="logo" style="height: 40px; width: 40px; float: left;margin-left: 50px;transform: translateY(5px);">
+            <p class="p">PortFolio</p>
+        </div>
+        <div class="nav">
+        <nav>
+            <ul>
+               <a href="#"><li>Home</li></a>
+               <a href="#"><li>About</li></a>
+                <a href="#"><li>Services</li></a>
+                <a href="#"><li>Page</li></a>
+                <a href="#"><li>Login</li></a>
+               <a href="#"><li>Contact</li></a>
+            </ul>
+            <button class="btn">Get Free Entertainment</button>
+        </nav>
+        </div>
+        <div class="slider">
+           <div class="box">
+              <p class="pp">Lorem ipsum dolor sit amet.</p> <br>
+              <h1>I'm Designer</h1>
+              <h1>Ismaail Khan</h1>
+              <br>
+              <p style="padding: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magni quae provident deserunt quisquam ipsum commodi iste, excepturi voluptatum,  aliquam.</p>
+               <br> <button style="background-color:#a34442;padding: 5px 10px;border: none;margin-left: 40px; color: white; border-radius: 5px;">Learn More</button>
+                <button style="padding: 5px 10px;border: none;margin-left: 60px;border-radius: 5px; ">More Info</button>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

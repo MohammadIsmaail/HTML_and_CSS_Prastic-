@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details Example</title>
+  <style>
+    body
+    {
+        background-color: steelblue;
+    }
+    details summary {
+      padding: 8px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      margin: 5px ;
+      border-radius: 6px;
+      background: #f9f9f9;
+      list-style: none;
+      width: 300px;
+      margin: 5px auto;
+    }
+
+   
+
+    summary::after {
+      content: " ^";
+      float: right;
+      font-weight: bold;
+    }
+
+    
+
+    details p {
+      padding: 10px;
+      background: #f1f1f1;
+      margin: 0;
+      width: 300px;
+      margin: 5px auto;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <p>The Beginning of a New Asset Class</p>
+    <h2> Frequently Asked Questions</h2>
+  <details>
+    <summary>What is Krushi?</summary>
+  </details>
+
+  <details>
+    <summary>How does it work?</summary>
+  </details>
+
+  <details>
+    <summary>What are the major challenges of current agriculture?</summary>
+  </details>
+  <details>
+    <summary>How does the Krushi address the above challenges?</summary>
+  </details>
+  <details>
+    <summary>How can I be a part of Krushi? </summary>
+  </details>
+  <details>
+    <summary>How does it work?</summary>
+  </details>
+  
+</body>
+</html>

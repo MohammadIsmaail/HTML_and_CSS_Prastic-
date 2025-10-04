@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            height: 200px;
+            width: 440px;
+            background-color: yellow;
+            margin: 50px auto;
+            border: 1px solid pink;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: space-around;
+            align-content: space-around; */
+                 column-gap: 20px;
+
+        }
+        .box{
+            height: 70px;
+            width: 130px;
+            border: 1px solid black;
+            line-height: 70px;
+            text-align: center;
+            align-self: flex-start;
+              background-image: url("download4.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .box2{
+            height: 70px;
+            width: 130px;
+            border: 1px solid black;
+            line-height: 70px;
+            text-align: center;
+            align-self: center;
+              background-image: url("download2.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+       
+        }
+        .box3{
+            height: 70px;
+            width: 130px;
+            border: 1px solid black;
+            line-height: 70px;
+            text-align: center;
+            align-self: flex-end;
+              background-image: url("download3.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="box">title1</div>
+        <div class="box2">title2</div>
+        <div class="box3">title3</div>
+        
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg,#4961c1,#884a89);
+            height: 100vh;
+        }
+        #outer {
+            width: 400px;
+            height: 480px; 
+            background: white;
+            border-radius: 10px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        }
+        #a {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 8px;
+        }
+        .a1 {
+            width: 100%;
+            height: 35px; 
+            margin: 12px 0;
+            border: none;
+            border-bottom: 1px solid #888;
+            font-size: 16px;
+            outline: none;
+            color: black;
+            background: white;
+        }
+        .btn {
+            width: 100%;
+            height: 40px; 
+            margin-top: 18px;
+            background: #f7f7f7;
+            border: 1px solid #555;
+            border-radius: 25px;
+            font-size: 16px;
+            color: black;
+        }
+        #login {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+            color: black;
+        }
+        #login a {
+            color: #4961c1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="a">Register</div>
+        <input type="text" class="a1" placeholder="Name" required>
+        <input type="email" class="a1" placeholder="Email" required>
+        <input type="password" class="a1" placeholder="Password" required>
+        <input type="password" class="a1" placeholder="Confirm Password" required>
+        <button class="btn">Sign Up</button>
+        <div id="login">Have an Account ? <a href="#">Login Here</a></div>
+    </div>
+</body>
+</html>

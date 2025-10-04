@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Task 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <style>
+            *{
+                --color:darkcyan;
+                margin: 0;padding: 0;box-sizing: border-box;font-family: Arial, Helvetica, sans-serif;
+            }
+            .bg{
+                background: var(--color);
+            }
+            .txt{
+                color: var(--color);
+            }
+            .main{
+                min-height: 1000px;
+                width: 1400px;
+                margin: 0px auto;
+            }
+            .up
+            {
+                height: 50px;
+                width: 1400px;
+                padding: 5px 100px;
+            }
+            .a{
+                height: 40px;
+                width: 400px;
+                float: left;
+            }
+            .b{
+                height: 40px;
+                width: 800px;
+                float: left;
+                line-height: 40px;
+            }
+            .b i{
+                color: var(--color);
+                margin-left: 20px;
+            }
+            nav{
+                height: 40px;
+                width: 1400px;
+                background: var(--color);
+                padding: 5px 100px;
+            }
+            .nl{
+                height: 30px;
+                width: 800px;
+                float: left;
+            }
+            .nr{
+                height: 30px;
+                width: 400px;
+                float: left;
+                text-align: right;
+                line-height: 30px;
+            }
+            ul{
+                height: 30px;
+                width: 1200px;
+                list-style:  none;
+            }
+            li{
+                height: 30px;
+                width: 100px;
+                font-size: 14px;
+                float: left;
+                margin-right: 20px;
+                line-height: 30px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .hero{
+                height: 500px;
+                width: 1400px;
+                background: radial-gradient( rgba(255,255,255,.4),rgba(0, 139, 139, 0.4),rgba(255, 255, 255, 0.4)),url("img/task2.jpg");
+                background-size: cover;
+                padding: 180px;
+                color: white;
+            }
+            .hero h1{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-bottom: 20px;
+            }
+            .hero button{
+                height: 40px;
+                width: 200px;
+                margin-top: 30px;
+                background: orangered;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .services{
+                height: 700px;
+                width: 1400px;
+                padding: 30px 100px;
+                text-align: center;
+            }
+            .services h1{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            .row{
+                height: 320px;
+                width: 1200px;
+            }
+            .r1{
+                height: 300px;
+                width: 350px;
+                margin-left: 50px;
+                float: left;
+                font-weight: bold;
+            }
+            .r1 img{
+                height: 250px;
+                width: 320px;
+                align-items: center;
+                margin-bottom: 10px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="up">
+                <div class="a" style="font-size: 20px;font-weight: bold;color: var(--color);"><i class="ri-dna-line" style="color: red;font-size: 30px;"></i>CARE </div>
+                <div class="b">
+                    <i class="ri-phone-line"></i>Contact us : hospital456@email.com
+                    <i class="ri-heart-pulse-fill"></i> Emergency no. +01 234567446
+                    <i class="ri-hand-heart-fill"></i> Donate Us
+                </div>
+            </div>
+            <nav>
+                <div class="nl">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find a Doctor</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nr" style="text-align: right; font-size: 20px; font-weight: bold;color: white ;"><i class="ri-menu-line"></i></div>
+            </nav>
+            <div class="hero">
+                <h1>Experts in Heart Health</h1>
+                <p>Leading heart hospital offering expert care, advanced treatments,<br> and personalized services to promote cardiovascular health <br> and improve lives.</p>
+                <button>Book an Appointment</button>
+            </div>
+            <div class="services">
+                <h1><u>Cardiology Services</u></h1>
+                <div class="row">
+                    <div class="r1">
+                        <img src="oip.webp" alt=""><br>
+                        <p>Cardiovascular Diagnostics</p>
+                    </div>
+                    <div class="r1">
+                        <img src="download3.webp" alt=""><br>
+                        <p>Heart Surgery</p>
+                    </div>
+                    <div class="r1">
+                        <img src="download2.webp" alt=""><br>
+                        <p>Cardiac Rehabilitation</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="r1">
+                        <img src="oip.webp" alt=""><br>
+                        <p>Interventional Cardiology</p>
+                    </div>
+                    <div class="r1">
+                        <img src="OIP2.jpg" alt=""><br>
+                        <p>Arrhythmia Treatment</p>
+                    </div>
+                    <div class="r1">
+                        <img src="OIP1.webp" alt=""><br>
+                        <p>Preventive Heart Care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

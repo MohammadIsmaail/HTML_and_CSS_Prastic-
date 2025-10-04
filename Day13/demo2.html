@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        :root{
+            --color:#FF1744;
+            --seccolor:#8E24AA;
+            --thirdcolor:#D50000;
+            --fourthcolor:#00E676;
+        }
+        .bg-mycolor{
+            background: linear-gradient(45deg,var(--color), var(--seccolor), var(--thirdcolor), var(--fourthcolor));
+        }
+        #outer{
+            min-height: 500px;
+            width: 1300px;
+            margin: 0px auto;
+        }
+        .text-mycolor{
+            color: var(--seccolor);
+        }
+        .top1{
+            height: 40px;
+            width: 1300px;
+            background-color: rgba(0, 0,0, .7);
+            padding: 0px 150px;
+            box-sizing: border-box;
+            color: white;
+            line-height: 40px;
+            
+
+        }
+        .x{
+            height: 40px;
+            width: 333px;
+            float: left;
+            text-align: center;
+            
+        }
+        .top2{
+            height: 80px;
+            background-color: burlywood;
+            width: 1300px;
+            padding: 0px 200px;
+            box-sizing: border-box;
+        }
+        .a1{
+            height: 80px;
+            width: 300px;
+            float: left;
+            font-size: 35px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .a2{
+            height: 80px;
+            width: 200px;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+            float: left;
+            
+        }
+      
+        .top3{
+            height:500px;
+            width: 1300px;
+            background-image: url("download2.webp");
+            background: rgba(0, 0,0, .6);
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: abc 2s ease  infinite alternate backwards;
+        }
+        .a11{
+            height:500px;
+            width: 200px;
+            float: left;
+        }
+        .a12{
+            height: 500px;
+            width: 450px;
+            float: left;
+            background: rgba(0, 0,0, .6);
+            padding: 70px 60px;
+        }
+        ::placeholder{
+            color: #00E676;
+        }
+        .t{
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+       }
+        .tn{
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+       }
+       .te{
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+       }
+       .ta{
+        height: 60px;
+        width: 100%;
+        resize: none;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+        
+
+       }
+       .btn1{
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: red;
+        border: none;
+        font-size: 20px;
+        color: white;
+        
+       }
+       .ta:focus{
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+        outline: none;
+       }
+       .t:focus{
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+        outline: none;
+       }
+       .te:focus{
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+        outline: none;
+       }
+       .tn:focus{
+        border: none;
+        border-bottom: 2px solid yellowgreen;
+        background: transparent;
+        outline: none;
+       }
+
+       @keyframes abc {
+        0%{
+            background-image: url("download3.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        50%{
+            background-image: url("download4.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        100%{
+             background-image: url("OIP1.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+       }
+
+       .topadd{
+        height: 45px;
+        width: 1300px;
+        box-sizing: border-box;
+        background: linear-gradient(rgba(0.0.0,0.1),rgba(0.0.0,0.4));
+       }
+       nav ul{
+        list-style: none;
+
+       }
+       nav ul li{
+        height: 40px;
+        width: 130px;
+        transform: translateX(133px);
+        text-align: center;
+        line-height: 40px;
+        float: left;
+       
+       }
+       .topadd2{
+        background-color: white;
+        height: 400px;
+        width: 1300px;
+        
+       }
+       .add2{
+        height: 250px;
+        width: 300px;
+        float: left;
+        margin-left: 70px;
+        transform: translateY(50px);
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px black;
+        text-align: center;
+        color: black;
+        padding-top: 20px;
+       }
+        .add22{
+        height: 250px;
+        width: 300px;
+        float: left;
+        margin-left: 140px;
+        transform: translateY(50px);
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px black;
+        text-align: center;
+        color: black;
+        padding-top: 20px;
+       }
+       .add222{
+        height: 250px;
+        width: 300px;
+        text-align: center;
+        color: black;
+        padding-top: 20px;
+        float: left;
+        margin-left: 140px;
+        transform: translateY(50px);
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px black;
+       }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .about{
+            height: 400px;
+            width: 1300px;
+            background-color: aliceblue;
+        }
+        .boxabout{
+            height: 250px;
+            width: 900px;
+            margin: 50px auto;
+            column-count: 3;
+            column-rule-color: #00E676;
+            column-rule-style: groove;
+
+        }
+        .service{
+            height: 400px;
+            width: 1300px;
+            background-color: aliceblue;
+        }
+        .boxservice{
+            height: 250px;
+            width: 900px;
+            margin: 50px auto;
+            column-count: 3;
+            column-rule-color: #00E676;
+            column-rule-style: groove;
+
+        }
+        .product{
+            height: 450px;
+            width: 1300px;
+            padding: 15px 200px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .boxx1{
+            height: 370px;
+            width: 280px;
+            float: left;
+            margin: 0px 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        .boxx2{
+            height: 370px;
+            width: 280px;
+            float: left;
+            margin: 0px 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        .boxx3{
+            height: 370px;
+            width: 280px;
+            float: left;
+            margin: 0px 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        .img{
+              height: 140px;
+              width: 280px;
+             padding: 10px 10px ;
+              box-sizing: border-box;
+        }
+        
+        .cont{
+           height: 160px;
+           width: 280px;
+           padding: 5px 5px;
+           box-sizing: border-box;
+           text-align: center;
+           text-align: justify;
+        }
+        .img11{
+            height: 100%;
+            width: 100%;
+        }
+        .btnby{
+            height: 40px;
+            width: 100px;
+            margin: 10px;
+            font-size: 15px;
+            background-color: #D50000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .gallary{
+            height: 500px;
+            width: 1300px;
+            background-color: #D50000;
+            margin-bottom:120px; 
+            
+        }
+        .gal{
+            height: 700px;
+            width: 1300px;
+        }
+
+        .ver{
+             height: 300px;
+             width: 1300px;
+             
+        }
+        .img1{
+            height: 200px;
+            width: 200px;
+            border: 10px groove white;
+            float: left;
+            margin-left: 50px;
+            border-radius: 3px;
+        }
+        .img1 img{
+            height: 180px;
+            width: 180px;
+        }
+
+         .hor{
+             height: 300px;
+             width: 1300px;
+             transform: translateY(-80px);
+             
+        }
+        .hor .img1{
+            height: 200px;
+            width: 200px;
+            border: 10px groove white;
+            float: left;
+            margin-left: 50px;
+            border-radius: 3px;
+        }
+        .hor .img1 img{
+            height: 180px;
+            width: 180px;
+        }
+
+        .rot{
+            height: 50px;
+            width: 200px;
+            color: black;
+            background-color: #00E676;
+            display: none;
+        }
+        .img1:hover +p{
+            display: block;
+            color: black;
+            z-index: 1;
+        }
+        .rabbin{
+            height: 30px;
+            width: 170px;
+            font-weight: bold;
+            background-color: #00E676;
+            text-align: center;
+            color: black;
+            line-height: 30px;
+            position: absolute;
+            top: 20px;
+            right: -15px;
+            overflow: hidden;
+            z-index: 0;
+            transform: rotate(40deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="outer" class="bg-mycolor text-mycolor">
+        <div class="top1">
+            <div class="x">Lorem ipsum dolor sit amet.</div>
+            <div class="x bg-mycolor" style="border-radius: 40px;">dolor sit amet consectetur adipisicing.</div>
+            <div class="x">Lorem, ipsum dolor.</div>
+        </div>
+        <div class="top2">
+            <div class="a1">Code<span style="color: wheat;"> Helper<span/></div>
+            <div class="a2"><b>Call US</b><br>
+            +91-884036XXXX</div>
+            <div class="a2"><b>Mail US</b><br>
+             abc@gmail.com</div>
+            <div class="a2 btn"><a href="#" style="padding: 5px 15px; border-radius: 30px; background-color: #8E24AA;" >Contact US</a></div>
+        </div>
+
+<section class="topadd">
+    <nav>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About Us</li></a>
+            <a href="#"><li>Services</li></a>
+            <a href="#"><li>Product</li></a>
+            <a href="#"><li>Register</li></a>
+            <a href="#"><li>Gallary</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#"><li>Login</li></a>
+        </ul>
+    </nav>
+</section>
+
+        <div class="top3">
+            <div class="a11"></div>
+            <div class="a12" >
+                <input type="text" placeholder="Name" class="t" autofocus autocomplete=""><br><br>
+                <input type="email" placeholder="Email" class="te"><br><br>
+                <input type="number" placeholder="Mobile number" class="tn"><br><br>
+                <textarea placeholder="Message" class="ta"></textarea><br><br>
+                <button class="btn1">Submit</button>
+            </div>
+            <div class="a12" >
+                <p style="text-align: center; color: aqua; font-size: 30px;">Welcome to CodeHelper</p>
+                <br><p style="text-align: center; color: wheat;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempore sequi laborum accusantium modi corrupti recusandae dicta quas omnis dolore.</p>
+                <br><br><button style="font-size: 20px; padding: 5px 15px; 
+                margin-left: 90px; border-radius: 4px;background-color: aqua; border: none;">Get In Touch</button>
+            </div>
+            <div class="a11">
+                
+            </div>
+        </div>
+    
+<section class="topadd2">
+    <div class="add2"><h1>Heading1</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi error est, dolor sapiente quam necessitatibus nesciunt esse minima enim qui rerum quaerat, repellendus, recusandae blanditiis quo repellat numquam itaque.</div>
+    <div class="add22"><h1>Heading2</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim sit itaque repellat, corrupti doloribus nostrum ex fugiat tenetur modi! Aspernatur ducimus, id facilis accusamus fugiat rerum maxime explicabo ipsum enim culpa, quaerat aut! Dolorem eligendi at ex quia, consequatur commodi.</div>
+    <div class="add222"><h1>Heading3</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum temporibus hic nesciunt autem accusamus fugiat quas mollitia impedit corrupti nulla laborum ipsam itaque laboriosam iusto, qui voluptas rerum magnam nisi praesentium cumque nobis? Libero aperiam minima beatae quisquam dolorum harum sequi, magni dolore saepe.</div>
+
+</section>
+<section class="about">
+    
+        <h1 style="column-span: all;
+                text-align: center;
+                margin-bottom: 20px;
+                color: black;">About Us</h1>
+        <div class="boxabout">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eius quaerat fugit praesentium voluptatibus. Recusandae, eaque commodi mollitia numquam maxime, nobis, dicta earum similique quis fugiat optio incidunt quod! Voluptate totam, tempore ipsam labore commodi sapiente at expedita porro rem enim quisquam obcaecati natus excepturi nisi in! Dolore voluptas soluta atque. Natus asperiores perferendis optio ex expedita libero in enim hic id quis ipsum voluptas, rerum earum. Quibusdam qui facere assumenda repellat minus quidem aliquam exercitationem sunt ratione sequi voluptatem, dignissimos, laborum nisi ipsum veritatis ex veniam recusandae provident laudantium corrupti. Molestias, quisquam nostrum commodi distinctio perspiciatis voluptatem maiores natus!
+           Quibusdam  qui facere assumenda repellat minus quidem aliquam exercitationem sunt ratione sequi voluptatem, dignissimos, laborum nisi ipsum veritatis ex veniam recusandae provident laudantium corrupti. Molestias, quisquam nostrum commodi distinctio perspiciatis voluptatem maiores natus!
+            Quibusdam qui facere assumenda repellat minus quidem aliquam exercitationem sunt ratione sequi voluptatem, dignissimos, laborum nisi ipsum veritatis ex veniam recusandae provident laudantium corrupti. Molestias, quisquam nostrum commodi distinctio perspiciatis voluptatem maiores natus!
+        </div>   
+</section>
+<section class="service">
+    
+        <h1 style="column-span: all;
+                text-align: center;
+                margin-bottom: 20px;
+                color: black;">Services</h1>
+        <div class="boxservice">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eius quaerat fugit praesentium voluptatibus. Recusandae, eaque commodi mollitia numquam maxime, nobis, dicta earum similique quis fugiat optio incidunt quod! Voluptate totam, tempore ipsam labore commodi sapiente at expedita porro rem enim quisquam obcaecati natus excepturi nisi in! Dolore voluptas soluta atque. Natus asperiores perferendis optio ex expedita libero in enim hic id quis ipsum voluptas, rerum earum. Quibusdam qui facere assumenda repellat minus quidem aliquam exercitationem sunt ratione sequi voluptatem, dignissimos, laborum nisi ipsum veritatis ex veniam recusandae provident laudantium corrupti. Molestias, quisquam nostrum commodi distinctio perspiciatis voluptatem maiores natus!
+           Quibusdam  qui facere assumenda repellat minus quidem aliquam exercitationem sunt ratione sequi voluptatem, dignissimos, laborum nisi ipsum veritatis ex veniam recusandae provident laudantium corrupti. Molestias, quisquam nostrum commodi distinctio perspiciatis voluptatem maiores natus!
+            Quibusdam qui facere assumenda repellat minus quidem aliquam exercitationem sunt ratione sequi voluptatem, dignissimos, laborum nisi ipsum veritatis ex veniam recusandae provident laudantium corrupti. Molestias, quisquam nostrum commodi distinctio perspiciatis voluptatem maiores natus!
+        </div>   
+</section>
+<section class="product">
+    
+        <h1 style="column-span: all;
+                text-align: center;
+                margin-bottom: 20px;
+                color: black;">Product</h1>
+                <hr style="width: 200px; margin:0px auto">
+
+        <div class="boxx1">
+            <div class="img"><img src="download2.webp" class="img11"> </div>
+            <div class="cont"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ipsa quis eveniet ab odit repudiandae inventore dolorum provident alias quo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quas veritatis sit modi, dignissimos eveniet enim beatae molestiae dolor quibusdam!</div>
+            <button class="btnby">Buy Now</button>
+        </div>   
+        <div class="boxx2">
+            <div class="img"><img src="man2.webp" class="img11"></div>
+            <div class="cont">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nulla nisi dolores beatae est aliquam obcaecati nemo aut quia commodi.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quas veritatis sit modi, dignissimos eveniet enim beatae molestiae dolor quibusdam!</div>
+            <button class="btnby">Buy Now</button>
+        </div>   
+        <div class="boxx3">
+            <div class="img"><img src="download3.webp" class="img11"></div>
+            <div class="cont">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quas veritatis sit modi, dignissimos eveniet enim beatae molestiae dolor quibusdam!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quas veritatis sit modi, dignissimos eveniet enim beatae molestiae dolor quibusdam!
+            </div>
+            <button class="btnby">Buy Now</button>
+        </div>   
+</section>
+<div style="background-color: white; height: 20px;"></div>
+
+<section class="gallary">
+    <h1 style="column-span: all;
+                text-align: center;
+                line-height: 70px;
+                color: black;">Gallary</h1>
+                <div class="gal">
+                   <div class="ver">
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <p class="rot">Heading1</p>
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <p class="rot">Heading2</p>
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <p class="rot">Heading3</p>
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <p class="rot">Heading4</p>
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <p class="rot">Heading5</p>
+                   </div>
+                   <div class="hor">
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <div class="img1"><img src="download4.webp"> </div>
+                    <div class="img1"><img src="download4.webp"> </div>
+                   </div>
+                </div>
+
+                
+</section>
+<div class="rabbin">
+    ENQUIRY
+</div>
+    </div>
+
+</body>
+</html>

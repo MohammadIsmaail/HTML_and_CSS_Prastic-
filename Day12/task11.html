@@ -1,0 +1,294 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: #0d7962;
+  height: 60px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.logo {
+  float: left;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  line-height: 30px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: white;
+  color: #0d7962;
+}
+
+.menu-icon {
+  font-size: 28px;
+  color: white;
+  line-height: 60px;
+  float: right;
+  cursor: pointer;
+  display: none; /* desktop me hide */
+}
+
+/* 🔹 Responsive Part */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    background: #0d7962;
+    transition: left 0.3s;
+  }
+
+  nav ul li {
+    float: none;
+    border-top: 1px solid white;
+    
+  }
+
+  .menu-icon {
+    display: block; 
+  }
+
+  nav ul.show {
+    left: 0; 
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">MyLogo</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodingLab Navbar</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- Top Navbar ---------- */
+.topbar {
+  width: 100%;
+  height: 60px;
+  background: #3b82f6;
+  position: relative;
+}
+
+.logo {
+  float: left;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+.topbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 20px;
+}
+
+.topbar ul li {
+  float: left;
+}
+
+.topbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  line-height: 60px;
+}
+
+.topbar ul li a:hover {
+  background: white;
+  color: #3b82f6;
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  font-size: 28px;
+  color: white;
+  line-height: 60px;
+  float: right;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
+
+/* ---------- Search Bar Section ---------- */
+.searchbar {
+  width: 100%;
+  background: #3b82f6;
+  height: 60px;
+  margin: 10px auto;
+}
+
+.searchbar .logo2 {
+  float: left;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+.searchbar input {
+  float: right;
+  margin-right: 300px;
+  margin-top: 15px;
+  height: 40px;
+  width: 500px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* ---------- Side Menu ---------- */
+#sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+#sideMenu a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#sideMenu a:hover {
+  background: #575757;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="topbar">
+    <div class="logo">CodingLab</div>
+    <div class="menu-icon" onclick="openMenu()">☰</div>
+    <ul id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">🔍</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search Bar Section -->
+  <div class="searchbar">
+    <div class="logo2">CodingLab</div>
+    <input type="text" placeholder="Search here...">
+     <div style="cursor:pointer; float: right; line-height: 0px;color: aliceblue; margin-left: 460px;">X</div>
+  </div>
+
+  <!-- Side Menu -->
+  <div id="sideMenu">
+    <span class="closebtn" onclick="closeMenu()"> × </span>
+    <a href="#">Home</a> 
+    <a href="#">Services</a>
+    <a href="#">Products</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <img src="OIP2.jpg" alt="" style="width:100%; height:90vh; object-fit:cover; position:relative; top:0; left:0; z-index:-1;">
+
+<script>
+    function openMenu() {
+  document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Correct Grid 7 Columns</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: white;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(3, 80px);
+    border: 2px solid blue;
+  }
+  .cell {
+    border: 2px solid blue;
+  }
+  .green {
+    background-color: #e6ffe6;
+  }
+  .blue {
+    background-color: #e6e6ff;
+  }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <!-- Row 1 -->
+    <div class="cell blue"></div>
+    <div class="cell green"></div>
+    <div class="cell blue"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell green"></div>
+    <div class="cell"></div>
+
+    <!-- Row 2 -->
+    <div class="cell green"></div>
+    <div class="cell blue"></div>
+    <div class="cell green"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell green"></div>
+    <div class="cell"></div>
+
+    <!-- Row 3 -->
+    <div class="cell blue"></div>
+    <div class="cell green"></div>
+    <div class="cell blue"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell green"></div>
+    <div class="cell"></div>
+  </div>
+</body>
+</html>

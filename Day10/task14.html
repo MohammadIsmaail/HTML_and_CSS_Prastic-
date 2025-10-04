@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Register Form</title>
+<style>
+    * {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #7fdbff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #c4e3f6;
+  width: 700px;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-section {
+  background-color: #3179b7;
+  color: white;
+  padding: 40px 30px;
+  width: 45%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.info-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.info-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.info-section strong {
+  display: block;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #3179b7;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d0e7ff;
+}
+
+.register-section {
+  background-color: #fff;
+  padding: 40px 30px;
+  width: 55%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.register-section h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #333;
+}
+
+form .input-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkbox-group {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.checkbox-group a {
+  color: #3179b7;
+  text-decoration: none;
+}
+
+.checkbox-group a:hover {
+  text-decoration: underline;
+}
+
+.register-btn {
+  width: 100%;
+  background-color: #3179b7;
+  color: white;
+  font-size: 16px;
+  padding: 12px 0;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.register-btn:hover {
+  background-color: #255a8c;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="info-section">
+      <h2>INFORMATION</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      </p>
+      <p><strong>To address:</strong> Your street no. 45, New York</p>
+      <button class="btn">Have An Account</button>
+    </div>
+
+    <div class="register-section">
+      <h2>REGISTER FORM</h2>
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+        <input type="email" placeholder="Your Email" required /> <br> <br>
+        <div class="input-group">
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm Password" required />
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="agree" required />
+          <label for="agree">I agree on the <a href="#">terms and conditions</a></label>
+        </div>
+        <button type="submit" class="btn register-btn">Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
